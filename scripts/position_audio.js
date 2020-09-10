@@ -22,6 +22,7 @@ image.addEventListener("mousemove", function(e) {
     }
 });
 
+var audio;
 
 image.addEventListener("click", function(e) {
 
@@ -36,7 +37,8 @@ image.addEventListener("click", function(e) {
     }
     for (var i = 0; i < sounds.length; i++) {
         if (x >= sounds[i].x1 && x <= sounds[i].x2 && y >= sounds[i].y1 && y <= sounds[i].y2 ) {
-            var audio = new Audio('assets/'+ prefix + sounds[i].sound + suffix + '.mp3');
+            audio && audio.pause();
+            audio = new Audio('assets/'+ prefix + sounds[i].sound + suffix + '.mp3');
             audio.play();
             return;
         }
