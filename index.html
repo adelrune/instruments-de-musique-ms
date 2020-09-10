@@ -1,0 +1,24 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <image id="img" src="assets/titlescr.png"></image>
+    <script>
+      document.getElementById("img").addEventListener("click", function(){
+          var audio = new Audio('assets/t.mp3');
+          audio.play();
+          setTimeout(function(){
+              window.location.href = "sommaire.html"
+          }, 22500)
+      })
+    </script>
+  </body>
+</html>
