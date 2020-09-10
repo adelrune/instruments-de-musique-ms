@@ -11,7 +11,8 @@ document.addEventListener("click", function(e) {
         pos_rect.x2 = e.clientX - image_rect.x;
         pos_rect.y2 = e.clientY - image_rect.y;
         console.log(pos_rect);
-        pos_rect = {};
+        navigator.clipboard.writeText(JSON.stringify(pos_rect));
+        pos_rect = {sound:"", link:""};
     }
     return true;
 });
