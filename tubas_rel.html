@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <image id="img" src="assets/brass/brassrel/tubasr.png"></image>
+    <script>
+      prefix = "brass/brassrel/";
+      suffix = "toot";
+      sounds = [{ x1: 128, y1: 373, x2: 173, y2: 387, sound:"tuba"},
+                { x1: 227, y1: 337, x2: 303, y2: 358, sound:"euph" },
+                { x1: 357, y1: 370, x2: 443, y2: 391, sound:"sous" }
+                ];
+      links = [{ x1: 14, y1: 136, x2: 140, y2: 365, link:"tuba"},
+               { x1: 179, y1: 242, x2: 386, y2: 338, link:"saxhorn" },
+               { x1: 408, y1: 46, x2: 571, y2: 360, link:"sousaphone" }];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

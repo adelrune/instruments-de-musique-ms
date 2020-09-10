@@ -1,5 +1,5 @@
 
-var pos_rect = {};
+var pos_rect = {sound:"", link:""};
 
 document.addEventListener("click", function(e) {
     var image = e.target;
