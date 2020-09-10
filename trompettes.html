@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <image id="img" src="assets/brass/brassrel/trumpetr.png"></image>
+    <script>
+      prefix = "brass/brassrel/";
+      suffix = "toot";
+      sounds = [{"sound":"trum","link":"","x1":39,"y1":132,"x2":114,"y2":146},
+                {"sound":"pitr","link":"","x1":111,"y1":189,"x2":187,"y2":209},
+                {"sound":"cotr","link":"","x1":47,"y1":205,"x2":110,"y2":221},
+                {"sound":"natt","link":"","x1":231,"y1":249,"x2":364,"y2":262},
+                {"sound":"didj","link":"","x1":261,"y1":300,"x2":323,"y2":304},
+                {"sound":"dung","link":"","x1":246,"y1":342,"x2":325,"y2":356},
+                {"sound":"alph","link":"","x1":68,"y1":385,"x2":159,"y2":394},
+                {"sound":"serp","link":"","x1":475,"y1":278,"x2":545,"y2":293},
+               {"sound":"crnt","link":"","x1":17,"y1":262,"x2":85,"y2":275}];
+
+      links = [{ sound: "", link: "serpent", x1: 452, y1: 50, x2: 568, y2: 264},
+               { sound: "", link: "trompette", x1: 9, y1: 77, x2: 159, y2: 124 },
+               { sound: "", link: "trompette_piccolo", x1: 105, y1: 148, x2: 198, y2: 183 },
+               { sound: "", link: "conque", x1: 20, y1: 162, x2: 100, y2: 201 },
+               { sound: "", link: "trompette_naturelle", x1: 184, y1: 211, x2: 421, y2: 248 },
+               { sound: "", link: "cornet_a_bouquin", x1: 13, y1: 226, x2: 178, y2: 261 },
+               { sound: "", link: "didgeridoo", x1: 89, y1: 270, x2: 433, y2: 298 },
+               { sound: "", link: "dung_cheng", x1: 25, y1: 305, x2: 471, y2: 340 },
+               {"sound":"","link":"cor_des_alpes","x1":6,"y1":357,"x2":559,"y2":384}
+              ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>
