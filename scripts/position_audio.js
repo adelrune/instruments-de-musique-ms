@@ -1,7 +1,8 @@
 image = document.getElementById("img");
 
-image_rect = image.getBoundingClientRect();
+
 image.addEventListener("mousemove", function(e) {
+    var image_rect = image.getBoundingClientRect();
     var rects = links.concat(sounds);
     hovering = false;
 
@@ -25,7 +26,7 @@ image.addEventListener("mousemove", function(e) {
 var audio;
 
 image.addEventListener("click", function(e) {
-
+    var image_rect = image.getBoundingClientRect();
     var x = e.clientX - image_rect.x;
     var y = e.clientY - image_rect.y;
 
