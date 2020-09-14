@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <image id="img" src="assets/woodwind/windrel/bagpiper.png"></image>
+    <script>
+      prefix = "woodwind/windrel/";
+      suffix = "toot";
+      sounds = [{"sound":"bagp","link":"","x1":3.5,"y1":214,"x2":117.5,"y2":239},
+                {"sound":"duda","link":"","x1":52.5,"y1":344,"x2":107.5,"y2":369},
+                {"sound":"nthp","link":"","x1":255.5,"y1":346,"x2":352.5,"y2":372},
+                {"sound":"zukr","link":"","x1":476.5,"y1":346,"x2":535.5,"y2":365},
+                {"sound":"zamp","link":"","x1":455.5,"y1":217,"x2":541.5,"y2":237}
+
+
+      ];
+      links = [{"sound":"","link":"cornemuse_d_ecosse","x1":15,"y1":13,"x2":151,"y2":209},
+               {"sound":"","link":"zampogna","x1":424,"y1":18,"x2":558,"y2":213},
+               {"sound":"","link":"duda","x1":132,"y1":200,"x2":232,"y2":385},{"sound":"","link":"duda","x1":80,"y1":255,"x2":150,"y2":344},
+               {"sound":"","link":"cornemuse_du_northumberland","x1":246,"y1":218,"x2":393,"y2":329},
+               {"sound":"","link":"zukra","x1":414,"y1":250,"x2":568,"y2":339},{"sound":"","link":"zukra","x1":384,"y1":331,"x2":459,"y2":382}
+              ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>
