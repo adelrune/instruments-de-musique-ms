@@ -1,0 +1,20 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <script>
+      params = new URLSearchParams(window.location.search);
+      image = document.createElement("img");
+      image.src = "assets/" + params.get("img");
+      document.body.appendChild(image)
+    </script>
+  </body>
+</html>

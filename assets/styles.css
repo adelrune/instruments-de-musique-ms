@@ -2,3 +2,18 @@ body {
     text-align: center;
     background-color: grey;
 }
+
+.dimmer {
+    display : block;
+    background-color : rgb(0, 0, 0);
+    position : absolute;
+    transition : opacity 0.7s ease 0s;
+    z-index :2;
+    top :0px;
+    left :0px;
+    opacity: 0%;
+}
+
+.dark {
+    opacity:60%
+}

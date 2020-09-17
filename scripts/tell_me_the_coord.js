@@ -12,7 +12,6 @@ document.addEventListener("click", function(e) {
     } else {
         pos_rect.x2 = e.clientX - image_rect.x;
         pos_rect.y2 = e.clientY - image_rect.y;
-        console.log(pos_rect);
         navigator.clipboard.writeText(JSON.stringify(pos_rect));
         pos_rect = {sound:"", link:""};
 
@@ -25,7 +24,6 @@ vis_mode = false;
 
 document.addEventListener("keydown", function(e) {
     if (event.code == "Escape") {
-        console.log("escape");
         pos_rect = {sound:"", link:""};
         (visualiser != null) && (visualiser.style.display = "none");
     }
