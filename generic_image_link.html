@@ -14,7 +14,15 @@
       params = new URLSearchParams(window.location.search);
       image = document.createElement("img");
       image.src = "assets/" + params.get("img");
+      image.id = "img";
+      prefix = params.get("prefix");
+      suffix = "";
       document.body.appendChild(image)
+      links =  JSON.parse(params.get("links")) || [];
+      sounds = JSON.parse(params.get("sounds")) || [];
     </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+
   </body>
 </html>

@@ -31,14 +31,24 @@ var audio;
 
 var dimmer = null;
 
-function showOverlay(link) {
+function showOverlay(link, links, sounds) {
+    links = links === undefined ? null: links;
+    sounds = sounds === undefined ? null: sounds;
     var link_splitted = link.split(".");
     var instrument_name = prefix.split("/").slice(0,-1).pop();
     if (link == "notes") {
-        link = "notes.html?img="+ prefix + instrument_name + "000f" + ".png" + "&prefix=" + prefix;
+        link = "000f" + ".png";
+    } else if (link == "vues") {
+        link = "000v" + ".png";
+    } else if (link == "demo") {
+        link = "000b" + ".png";
     } else {
-        link = "generic_image_link.html?img=" + prefix + instrument_name + link + ".png";
+        link = "00" + link + "z.png";
     }
+
+
+    link = "generic_image_link.html?img=" + prefix + instrument_name + link + "&prefix=" + prefix + "&links=" + JSON.stringify(links) + "&sounds=" + JSON.stringify(sounds);
+
     link_prefix = location.protocol;
     var docrect = document.body.getBoundingClientRect();
     var iframe = document.createElement("iframe");
@@ -49,6 +59,11 @@ function showOverlay(link) {
     dimmer.style.width = window.innerWidth +"px";
     dimmer.style.height = window.innerHeight+"px";
     dimmer.onclick = function() {
+        console.log("aaaa");
+        ifs = document.querySelectorAll("iframe");
+        for (var i = 0; i < ifs.length; i++) {
+            ifs[i].remove();
+        }
         iframe.remove();
         dimmer.remove();
     };
@@ -57,17 +72,24 @@ function showOverlay(link) {
     iframe.scrolling="no";
     iframe.allowSameO3rigin = 1;
     iframe.style.position= "absolute";
+    iframe.style.display = "none";
     var image_rect = image.getBoundingClientRect();
 
     iframe.onload = function(){
-        var w = (this.contentWindow.document.body.scrollWidth+20);
-        var h = (this.contentWindow.document.body.scrollHeight+20);
-        this.style.height= h + 'px';
-        this.style.width= w + 'px';
-        this.style.left = (image_rect.x + (image_rect.width/2)) - w/2 + "px";
-        this.style.top = (image_rect.y + (image_rect.height/2)) - h/2 + "px";
-        this.contentDocument.body.style.backgroundColor= "transparent";
-        document.body.classList.add("item-fade");
+        var that = this;
+        function refresh_style() {
+            var w = (that.contentWindow.document.getElementById("img").naturalWidth+20);
+            var h = (that.contentWindow.document.getElementById("img").naturalHeight+20);
+            that.style.height= h + 'px';
+            that.style.width= w + 'px';
+            that.style.left = (image_rect.x + (image_rect.width/2)) - w/2 + "px";
+            that.style.top = (image_rect.y + (image_rect.height/2)) - h/2 + "px";
+            that.contentDocument.body.style.backgroundColor= "transparent";
+            that.style.display = "inline-block";
+        }
+        refresh_style();
+        // setInterval(refresh_style ,100);
+
     };
     iframe.src = link;
     document.getElementById("container").appendChild(iframe);
@@ -80,6 +102,18 @@ image.addEventListener("click", function(e) {
 
     for (var i = 0; i < links.length; i++) {
         if (x >= links[i].x1 && x <= links[i].x2 && y >= links[i].y1 && y <= links[i].y2 ) {
+            if (links[i].link[0] == "@") {
+                // @ is a magic char that tells this thing to replace the current iframe with the link
+                var instrument_name = prefix.split("/").slice(0,-1).pop();
+                var internal_links = links[i].links;
+                var snds = links[i].sounds;
+                internal_links = internal_links === undefined ? null: internal_links;
+                snds = snds === undefined ? null: snds;
+                var link = links[i].link.slice(1,);
+                link = "generic_image_link.html?img=" + prefix + instrument_name + link + ".png" + "&prefix=" + prefix + "&links=" + JSON.stringify(internal_links) + "&sounds=" + JSON.stringify(snds);
+                window.location.href = link;
+                return;
+            }
             window.top.location.href = links[i].link + ".html";
             return;
         }
@@ -94,7 +128,7 @@ image.addEventListener("click", function(e) {
     }
     for (var i = 0; i < popups.length; i++) {
         if (x >= popups[i].x1 && x <= popups[i].x2 && y >= popups[i].y1 && y <= popups[i].y2 ) {
-            showOverlay(popups[i].link);
+            showOverlay(popups[i].link, popups[i].links, popups[i].sounds);
         }
     }
 });

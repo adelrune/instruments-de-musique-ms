@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/woodwind/conc/conc000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Concertina">Article Wikipédia</a>
+    <script>
+      prefix = "woodwind/conc/";
+      suffix = "";
+      sounds = [{"sound":"concsolo","link":"","x1":59,"y1":317,"x2":106,"y2":368},
+                {"sound":"concword","link":"","x1":424,"y1":9,"x2":457,"y2":54}
+
+
+      ];
+      links = [
+          {"sound":"","link":"accordeons","x1":270,"y1":375,"x2":319,"y2":429}
+
+              ];
+      popups = [
+          {"sound":"","link":"notes","x1":333,"y1":377,"x2":384,"y2":426, links:[{"sound":"","link":"bois","x1":243,"y1":31,"x2":305,"y2":96}]}
+
+      ]
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>
