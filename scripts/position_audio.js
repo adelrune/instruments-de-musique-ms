@@ -59,7 +59,6 @@ function showOverlay(link, links, sounds) {
     dimmer.style.width = window.innerWidth +"px";
     dimmer.style.height = window.innerHeight+"px";
     dimmer.onclick = function() {
-        console.log("aaaa");
         ifs = document.querySelectorAll("iframe");
         for (var i = 0; i < ifs.length; i++) {
             ifs[i].remove();
@@ -111,6 +110,7 @@ image.addEventListener("click", function(e) {
                 snds = snds === undefined ? null: snds;
                 var link = links[i].link.slice(1,);
                 link = "generic_image_link.html?img=" + prefix + instrument_name + link + ".png" + "&prefix=" + prefix + "&links=" + JSON.stringify(internal_links) + "&sounds=" + JSON.stringify(snds);
+                console.log(window.location);
                 window.location.href = link;
                 return;
             }
@@ -120,7 +120,6 @@ image.addEventListener("click", function(e) {
     }
     for (var i = 0; i < sounds.length; i++) {
         if (x >= sounds[i].x1 && x <= sounds[i].x2 && y >= sounds[i].y1 && y <= sounds[i].y2 ) {
-            console.log(window.top.audio);
             window.top.audio && window.top.audio.pause();
             window.top.audio = new Audio('assets/'+ prefix + sounds[i].sound + suffix + '.mp3');
             window.top.audio.play();

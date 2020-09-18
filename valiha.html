@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/strings/vali/vali000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/valiha">Article Wikipédia</a>
+    <script>
+      prefix = "strings/vali/";
+      suffix = "";
+      sounds = [
+          {"sound":"valiword","link":"","x1":384,"y1":16,"x2":422,"y2":56},
+          {"sound":"valisolo","link":"","x1":104,"y1":220,"x2":141,"y2":263}
+      ];
+      links = [
+          {"sound":"","link":"cithares","x1":264,"y1":377,"x2":315,"y2":428}
+              ];
+      popups = [
+          {"sound":"","link":"notes","x1":329,"y1":374,"x2":382,"y2":427, links:[
+              {"sound":"","link":"cordes","x1":258,"y1":45,"x2":296,"y2":90},
+              {"sound":"","link":"afrique","x1":244,"y1":170,"x2":306,"y2":215}
+          ]}
+      ]
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/strings/vina/vina000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/V%C3%AEn%C3%A2">Article Wikipédia</a>
+    <script>
+      prefix = "strings/vina/";
+      suffix = "";
+      sounds = [
+          {"sound":"vinaword","link":"","x1":371,"y1":19,"x2":409,"y2":50},
+          {"sound":"vinasolo","link":"","x1":78,"y1":231,"x2":118,"y2":273},
+
+
+      ];
+      links = [
+          {"sound":"","link":"cithares","x1":231,"y1":377,"x2":285,"y2":426}
+              ];
+      popups = [
+          {"sound":"","link":"0","x1":325,"y1":62,"x2":427,"y2":88},
+          {"sound":"","link":"1","x1":437,"y1":61,"x2":556,"y2":89},
+          {"sound":"","link":"vues","x1":480,"y1":281,"x2":596,"y2":344},
+          {"sound":"","link":"notes","x1":301,"y1":379,"x2":345,"y2":428, links:[
+              {"sound":"","link":"cordes","x1":254,"y1":43,"x2":303,"y2":90},
+              {"sound":"","link":"asie_du_sud","x1":245,"y1":195,"x2":307,"y2":251}
+          ]},
+          {"sound":"","link":"aussi","x1":357,"y1":378,"x2":418,"y2":430, links:[
+              {"sound":"","link":"sitar","x1":5,"y1":40,"x2":105,"y2":137},
+              {"sound":"","link":"tabla","x1":113,"y1":45,"x2":211,"y2":136}
+          ]}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/strings/qinn/qinn000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Guqin">Article Wikipédia</a>
+    <script>
+      prefix = "strings/qinn/";
+      suffix = "";
+      sounds = [
+          {"sound":"qinnword","link":"","x1":357,"y1":19,"x2":395,"y2":50},
+          {"sound":"qinnsolo","link":"","x1":109,"y1":323,"x2":146,"y2":362}
+      ];
+      links = [
+          {"sound":"","link":"cithares","x1":264,"y1":377,"x2":315,"y2":428}
+              ];
+      popups = [
+          {"sound":"","link":"notes","x1":329,"y1":374,"x2":382,"y2":427, links:[
+              {"sound":"","link":"cordes","x1":258,"y1":45,"x2":296,"y2":90},
+              {"sound":"","link":"asie_centrale_et_orientale","x1":246,"y1":195,"x2":306,"y2":253}
+          ]},
+          {"sound":"","link":"0","x1":36,"y1":127,"x2":105,"y2":163},
+          {"sound":"","link":"1","x1":383,"y1":285,"x2":446,"y2":320}
+      ]
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

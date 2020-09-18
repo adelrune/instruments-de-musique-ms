@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/strings/kant/kant000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Kantele">Article Wikipédia</a>
+    <script>
+      prefix = "strings/kant/";
+      suffix = "";
+      sounds = [
+          {"sound":"kantsolo","link":"","x1":84,"y1":240,"x2":128,"y2":287},
+          {"sound":"kantword","link":"","x1":522,"y1":18,"x2":565,"y2":49}
+
+      ];
+      links = [
+          {"sound":"","link":"cithares","x1":264,"y1":377,"x2":315,"y2":428}
+              ];
+      popups = [
+          {"sound":"","link":"vues","x1":489,"y1":246,"x2":601,"y2":339},
+          {"sound":"","link":"notes","x1":329,"y1":374,"x2":382,"y2":427, links:[
+              {"sound":"","link":"cordes","x1":258,"y1":45,"x2":296,"y2":90},
+              {"sound":"","link":"amerique_du_nord","x1":244,"y1":196,"x2":306,"y2":255}
+          ]}
+      ]
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>
