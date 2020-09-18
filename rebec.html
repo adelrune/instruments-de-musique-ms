@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/strings/rebc/rebc000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Rebec_(instrument)">Article Wikipédia</a>
+    <script>
+      prefix = "strings/rebc/";
+      suffix = "";
+      sounds = [
+          {"sound":"rebcword","link":"","x1":379,"y1":19,"x2":412,"y2":50},
+          {"sound":"rebcsolo","link":"","x1":568,"y1":227,"x2":609,"y2":266}
+
+      ];
+      links = [
+          {"sound":"","link":"violons","x1":262,"y1":379,"x2":317,"y2":425}
+              ];
+      popups = [
+          {"sound":"","link":"notes","x1":331,"y1":375,"x2":378,"y2":426, links:[
+              {"sound":"","link":"cordes","x1":250,"y1":38,"x2":307,"y2":85},
+          ],
+           sounds:[
+               {"sound":"rebcrang","link":"","x1":253,"y1":91,"x2":302,"y2":147}
+           ]
+          },
+          {"sound":"","link":"vues","x1":503,"y1":275,"x2":618,"y2":367}
+      ];
+
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

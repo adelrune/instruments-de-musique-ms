@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/strings/vila/vila000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Alto_(instrument_%C3%A0_cordes)">Article Wikipédia</a>
+    <script>
+      prefix = "strings/vila/";
+      suffix = "";
+      sounds = [
+          {"sound":"vilaword","link":"","x1":365,"y1":19,"x2":398,"y2":49},
+          {"sound":"vilasolo","link":"","x1":64,"y1":276,"x2":106,"y2":314}
+
+      ];
+      links = [
+          {"sound":"","link":"violons","x1":229,"y1":373,"x2":280,"y2":425}
+              ];
+      popups = [
+          {"sound":"","link":"notes","x1":294,"y1":371,"x2":346,"y2":428, links:[
+              {"sound":"","link":"cordes","x1":248,"y1":38,"x2":301,"y2":89},
+
+          ], sounds:[
+              {"sound":"vilarang","link":"","x1":253,"y1":89,"x2":302,"y2":147}
+          ]},
+          {"sound":"","link":"aussi","x1":357,"y1":374,"x2":416,"y2":425, links:[
+              {"sound":"","link":"violoncelle","x1":7,"y1":38,"x2":104,"y2":135},
+              {"sound":"","link":"contrebasse","x1":112,"y1":35,"x2":200,"y2":135}
+          ]},
+          {"sound":"","link":"vues","x1":503,"y1":278,"x2":615,"y2":363}
+      ]
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

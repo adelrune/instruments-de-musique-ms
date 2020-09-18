@@ -1,0 +1,83 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/strings/viln/viln000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Violon">Article Wikipédia</a>
+    <script>
+      prefix = "strings/viln/";
+      suffix = "";
+      sounds = [
+          {"sound":"vilnword","link":"","x1":365,"y1":19,"x2":398,"y2":49},
+          {"sound":"vilnsolo","link":"","x1":34,"y1":273,"x2":74,"y2":314}
+
+      ];
+      links = [
+{"sound":"","link":"violons","x1":267,"y1":375,"x2":312,"y2":424}
+              ];
+      popups = [
+          {"sound":"","link":"2","x1":225,"y1":63,"x2":268,"y2":102},
+          {"sound":"","link":"0","x1":385,"y1":92,"x2":436,"y2":124, sounds:[
+              {"sound":"viln01st","link":"","x1":69,"y1":203,"x2":100,"y2":237},
+              {"sound":"viln02st","link":"","x1":116,"y1":208,"x2":147,"y2":234},
+              {"sound":"viln03st","link":"","x1":162,"y1":206,"x2":187,"y2":230},
+              {"sound":"viln04st","link":"","x1":207,"y1":207,"x2":238,"y2":233}
+          ]},
+          {"sound":"","link":"1","x1":450,"y1":70,"x2":511,"y2":99},
+          {"sound":"","link":"3","x1":30,"y1":173,"x2":99,"y2":214},
+          {"sound":"","link":"vues","x1":503,"y1":278,"x2":615,"y2":363},
+          {"sound":"","link":"demo","x1":200,"y1":375,"x2":253,"y2":431,
+           sounds:[
+               {"sound":"vilnsnts","link":"","x1":9,"y1":31,"x2":288,"y2":115},
+               {"sound":"vilnrang","link":"","x1":292,"y1":39,"x2":341,"y2":112},
+               {"sound":"viln02fx","link":"","x1":181,"y1":151,"x2":268,"y2":169},
+               {"sound":"viln11fx","link":"","x1":183,"y1":207,"x2":252,"y2":228},
+               {"sound":"viln14fx","link":"","x1":180,"y1":263,"x2":255,"y2":288}
+           ],
+           links:[
+               {"sound":"","link":"@orch","x1":7,"y1":150,"x2":82,"y2":248, sounds:[
+                   {"sound":"vilnorch","link":"","x1":262,"y1":247,"x2":301,"y2":287}
+               ]},
+               {"sound":"","link":"@cham","x1":91,"y1":154,"x2":172,"y2":248, sounds:[
+                   {"sound":"vilncham","link":"","x1":263,"y1":234,"x2":302,"y2":273}
+               ]},
+               {"sound":"","link":"@gras","x1":8,"y1":255,"x2":81,"y2":344, sounds:[
+                   {"sound":"vilngras","link":"","x1":258,"y1":232,"x2":303,"y2":274}
+               ]},
+               {"sound":"","link":"@jazz","x1":92,"y1":253,"x2":170,"y2":346, sounds:[
+                   {"sound":"vilnjazz","link":"","x1":265,"y1":193,"x2":302,"y2":232}
+               ]}
+           ]
+          },
+          {"sound":"","link":"notes","x1":330,"y1":377,"x2":379,"y2":426, links:[
+              {"sound":"","link":"cordes","x1":258,"y1":40,"x2":298,"y2":89},
+
+          ], sounds:[
+              {"sound":"vilnrang","link":"","x1":251,"y1":88,"x2":304,"y2":149}
+          ]},
+          {"sound":"","link":"aussi","x1":391,"y1":376,"x2":445,"y2":426,
+           links:[
+               {"sound":"","link":"rebec","x1":11,"y1":36,"x2":103,"y2":133},
+               {"sound":"","link":"violoncelle","x1":113,"y1":44,"x2":205,"y2":130},
+               {"sound":"","link":"contrebasse","x1":8,"y1":142,"x2":99,"y2":229},
+               {"sound":"","link":"viole_de_gambe","x1":110,"y1":142,"x2":209,"y2":232}
+           ]
+          }
+
+      ]
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

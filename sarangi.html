@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/strings/sara/sara000a.png"></image>
+    </div>
+    </br>
+    <a href="https://en.wikipedia.org/wiki/Sarangi">Article Wikipédia</a>
+    <script>
+      prefix = "strings/sara/";
+      suffix = "";
+      sounds = [
+          {"sound":"saraword","link":"","x1":397,"y1":21,"x2":437,"y2":51},
+          {"sound":"sarasolo","link":"","x1":318,"y1":281,"x2":360,"y2":328}
+
+      ];
+      links = [
+          {"sound":"","link":"violons","x1":262,"y1":379,"x2":317,"y2":425}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":331,"y1":375,"x2":378,"y2":426, links:[
+              {"sound":"","link":"cordes","x1":250,"y1":38,"x2":307,"y2":85},
+              {"sound":"","link":"asie_du_sud","x1":242,"y1":183,"x2":309,"y2":255}]
+          },
+          {"sound":"","link":"vues","x1":486,"y1":269,"x2":601,"y2":368},
+          {"sound":"","link":"2","x1":229,"y1":101,"x2":288,"y2":127},
+          {"sound":"","link":"1","x1":18,"y1":239,"x2":131,"y2":273},
+          {"sound":"","link":"0","x1":58,"y1":315,"x2":125,"y2":347}
+      ];
+
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>
