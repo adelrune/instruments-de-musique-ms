@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/woodwind/shaw/shaw000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Chalemie">Article Wikipédia</a>
+    <script>
+      prefix = "woodwind/shaw/";
+      suffix = "";
+      sounds = [
+          {"sound":"shawword","link":"","x1":440,"y1":17,"x2":469,"y2":51},
+          {"sound":"shawsolo","link":"","x1":556,"y1":261,"x2":597,"y2":306},
+
+      ];
+      links = [
+          {"sound":"","link":"hautbois_r","x1":229,"y1":373,"x2":280,"y2":425}
+              ];
+      popups = [
+          {"sound":"","link":"notes","x1":294,"y1":371,"x2":346,"y2":428, links:[
+              {"sound":"","link":"bois","x1":248,"y1":38,"x2":301,"y2":89},
+
+          ], sounds:[
+              {"sound":"shawrang","link":"","x1":253,"y1":89,"x2":302,"y2":147}
+          ]},
+          {"sound":"","link":"aussi","x1":357,"y1":374,"x2":416,"y2":425, links:[
+              {"sound":"","link":"cornet_a_bouquin","x1":7,"y1":38,"x2":104,"y2":135},
+              {"sound":"","link":"saqueboute","x1":112,"y1":35,"x2":200,"y2":135}
+          ]}
+      ]
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

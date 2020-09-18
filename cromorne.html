@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/woodwind/crum/crum000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Cromorne">Article Wikipédia</a>
+    <script>
+      prefix = "woodwind/crum/";
+      suffix = "";
+      sounds = [
+          {"sound":"crumsolo","link":"","x1":43,"y1":141,"x2":89,"y2":181},
+          {"sound":"crumword","link":"","x1":397,"y1":14,"x2":437,"y2":54},
+
+
+      ];
+      links = [
+{"sound":"","link":"hautbois_r","x1":262.5,"y1":376,"x2":310.5,"y2":427},
+
+
+              ];
+      popups = [
+          {"sound":"","link":"notes","x1":328.5,"y1":377,"x2":377.5,"y2":424, links:[
+              {"sound":"","link":"bois","x1":249,"y1":38,"x2":303,"y2":86},
+
+          ],
+           sounds:[{"sound":"crumrang","link":"","x1":255,"y1":88,"x2":303,"y2":147}]
+          }
+      ]
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

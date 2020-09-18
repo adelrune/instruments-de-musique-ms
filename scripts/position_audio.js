@@ -27,8 +27,6 @@ image.addEventListener("mousemove", function(e) {
     }
 });
 
-var audio;
-
 var dimmer = null;
 
 function showOverlay(link, links, sounds) {
@@ -42,6 +40,8 @@ function showOverlay(link, links, sounds) {
         link = "000v" + ".png";
     } else if (link == "demo") {
         link = "000b" + ".png";
+    } else if (link == "aussi") {
+        link = "000s" + ".png";
     } else {
         link = "00" + link + "z.png";
     }
@@ -120,9 +120,10 @@ image.addEventListener("click", function(e) {
     }
     for (var i = 0; i < sounds.length; i++) {
         if (x >= sounds[i].x1 && x <= sounds[i].x2 && y >= sounds[i].y1 && y <= sounds[i].y2 ) {
-            audio && audio.pause();
-            audio = new Audio('assets/'+ prefix + sounds[i].sound + suffix + '.mp3');
-            audio.play();
+            console.log(window.top.audio);
+            window.top.audio && window.top.audio.pause();
+            window.top.audio = new Audio('assets/'+ prefix + sounds[i].sound + suffix + '.mp3');
+            window.top.audio.play();
             return;
         }
     }

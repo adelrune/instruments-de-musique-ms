@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/woodwind/cora/cora000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/cor_anglais">Article Wikipédia</a>
+    <script>
+      prefix = "woodwind/cora/";
+      suffix = "";
+      sounds = [{"sound":"corasolo","link":"","x1":76,"y1":136,"x2":118,"y2":178},
+                {"sound":"coraword","link":"","x1":407,"y1":17,"x2":441,"y2":52}
+
+      ];
+      links = [
+{"sound":"","link":"hautbois_r","x1":260,"y1":376,"x2":315,"y2":424}
+
+              ];
+      popups = [
+          {"sound":"","link":"1","x1":76,"y1":78,"x2":126,"y2":114},
+          {"sound":"","link":"0","x1":533,"y1":300,"x2":608,"y2":334},
+          {"sound":"","link":"notes","x1":327,"y1":374,"x2":381,"y2":424, links:[
+              {"sound":"","link":"bois","x1":248,"y1":43,"x2":302,"y2":88},
+
+          ], sounds:[
+              {"sound":"corarang","link":"","x1":250,"y1":91,"x2":304,"y2":149}
+          ]},
+
+      ]
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

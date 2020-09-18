@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/woodwind/zurn/zurn000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Zurna">Article Wikipédia</a>
+    <script>
+      prefix = "woodwind/zurn/";
+      suffix = "";
+      sounds = [
+          {"sound":"zurnword","link":"","x1":378,"y1":17,"x2":414,"y2":53},
+          {"sound":"zurnsolo","link":"","x1":111,"y1":222,"x2":144,"y2":265}
+
+      ];
+      links = [
+{"sound":"","link":"hautbois_r","x1":262.5,"y1":376,"x2":310.5,"y2":427},
+
+
+              ];
+      popups = [
+          {"sound":"","link":"notes","x1":328.5,"y1":377,"x2":377.5,"y2":424, links:[
+              {"sound":"","link":"bois","x1":249,"y1":38,"x2":303,"y2":92},
+              {"sound":"","link":"moyen_orient","x1":244,"y1":168,"x2":305,"y2":227}
+          ], sounds:[
+              {"sound":"zurnrang","link":"","x1":253,"y1":93,"x2":302,"y2":144}
+          ]}
+      ]
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

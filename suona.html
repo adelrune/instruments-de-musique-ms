@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/woodwind/suon/suon000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Suona">Article Wikipédia</a>
+    <script>
+      prefix = "woodwind/suon/";
+      suffix = "";
+      sounds = [
+          {"sound":"suonword","link":"","x1":378,"y1":17,"x2":414,"y2":53},
+          {"sound":"suonsolo","link":"","x1":102,"y1":240,"x2":145,"y2":280}
+
+      ];
+      links = [
+          {"sound":"","link":"hautbois_r","x1":262.5,"y1":376,"x2":310.5,"y2":427},
+
+
+              ];
+      popups = [
+          {"sound":"","link":"0","x1":71,"y1":204,"x2":147,"y2":233},
+          {"sound":"","link":"notes","x1":328.5,"y1":377,"x2":377.5,"y2":424, links:[
+              {"sound":"","link":"bois","x1":249,"y1":38,"x2":303,"y2":92},
+              {"sound":"","link":"asie_centrale_et_orientale","x1":244,"y1":168,"x2":305,"y2":227}
+          ]}
+      ]
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>
