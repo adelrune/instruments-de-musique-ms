@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/percussn/kend/kend000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Kendang">Article Wikipédia</a>
+    <script>
+      prefix = "percussn/kend/";
+      suffix = "";
+      sounds = [
+          {"sound":"kendword","link":"","x1":402,"y1":17,"x2":443,"y2":53},
+          {"sound":"kendsolo","link":"","x1":520,"y1":105,"x2":587,"y2":157}
+      ];
+      links = [
+          {"sound":"","link":"tambours","x1":373,"y1":375,"x2":421,"y2":426}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":434,"y1":375,"x2":490,"y2":428, links: [
+              {"sound":"","link":"percussions","x1":244,"y1":34,"x2":307,"y2":98},
+              {"sound":"","link":"asie_du_sud_est","x1":241,"y1":181,"x2":307,"y2":246}
+          ]},
+          {"sound":"","link":"aussi","x1":496,"y1":378,"x2":557,"y2":425, links: [
+              {"sound":"","link":"gender","x1":5,"y1":40,"x2":105,"y2":133},
+              {"sound":"","link":"bonang","x1":113,"y1":47,"x2":211,"y2":135},
+              {"sound":"","link":"gong_ageng","x1":4,"y1":142,"x2":105,"y2":236},
+              {"sound":"","link":"angklung","x1":113,"y1":143,"x2":203,"y2":232}
+          ]}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/percussn/stdm/stdm000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Steel-drum">Article Wikipédia</a>
+    <script>
+      prefix = "percussn/stdm/";
+      suffix = "";
+      sounds = [
+          {"sound":"stdmsolo","link":"","x1":46,"y1":55,"x2":88,"y2":106},
+          {"sound":"stdmword","link":"","x1":409,"y1":19,"x2":445,"y2":48},
+
+      ];
+      links = [
+          {"sound":"","link":"tambours","x1":265,"y1":373,"x2":311,"y2":424}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":328,"y1":379,"x2":381,"y2":423,links:[
+              {"sound":"","link":"percussions","x1":253,"y1":43,"x2":305,"y2":91},
+              {"sound":"","link":"amerique_latine","x1":255,"y1":211,"x2":304,"y2":261},
+          ], sounds:[
+              {"sound":"stdmrang","link":"","x1":247,"y1":268,"x2":309,"y2":398}
+          ]}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

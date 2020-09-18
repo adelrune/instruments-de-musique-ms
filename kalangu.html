@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/percussn/kala/kala000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Tama_(instrument)">Article Wikipédia</a>
+    <script>
+      prefix = "percussn/kala/";
+      suffix = "";
+      sounds = [
+          {"sound":"kalaword","link":"","x1":400,"y1":16,"x2":438,"y2":53},
+          {"sound":"kalasolo","link":"","x1":367,"y1":68,"x2":410,"y2":114},
+          {"sound":"kala1hit","link":"","x1":36,"y1":122,"x2":103,"y2":301},
+          {"sound":"kala2hit","link":"","x1":361,"y1":120,"x2":408,"y2":299}
+      ];
+      links = [
+          {"sound":"","link":"tambours","x1":265,"y1":373,"x2":311,"y2":424}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":328,"y1":379,"x2":381,"y2":423,links:[
+              {"sound":"","link":"percussions","x1":253,"y1":43,"x2":305,"y2":91},
+              {"sound":"","link":"afrique","x1":244,"y1":151,"x2":307,"y2":231}
+          ]}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

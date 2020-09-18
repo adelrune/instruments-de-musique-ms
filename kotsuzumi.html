@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/percussn/kots/kots000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Tsuzumi">Article Wikipédia</a>
+    <script>
+      prefix = "percussn/kots/";
+      suffix = "";
+      sounds = [
+          {"sound":"kotsword","link":"","x1":409,"y1":19,"x2":465,"y2":48},
+          {"sound":"kots1hit","link":"","x1":266,"y1":131,"x2":394,"y2":337},
+          {"sound":"kotssolo","link":"","x1":521,"y1":317,"x2":578,"y2":361}
+      ];
+      links = [
+          {"sound":"","link":"tambours","x1":265,"y1":373,"x2":311,"y2":424}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":328,"y1":379,"x2":381,"y2":423,links:[
+              {"sound":"","link":"percussions","x1":253,"y1":43,"x2":305,"y2":91},
+              {"sound":"","link":"asie_centrale_et_orientale","x1":244,"y1":151,"x2":307,"y2":231}
+          ]}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

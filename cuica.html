@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/percussn/cuic/cuic000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Cu%C3%ADca">Article Wikipédia</a>
+    <script>
+      prefix = "percussn/cuic/";
+      suffix = "";
+      sounds = [
+          {"sound":"cuicword","link":"","x1":379,"y1":22,"x2":413,"y2":47},
+          {"sound":"cuicsolo","link":"","x1":524,"y1":123,"x2":575,"y2":175},
+          {"sound":"cuic1hit","link":"","x1":95,"y1":52,"x2":359,"y2":227}
+      ];
+      links = [
+          {"sound":"","link":"tambours","x1":265,"y1":373,"x2":311,"y2":424}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":328,"y1":379,"x2":381,"y2":423,links:[
+              {"sound":"","link":"percussions","x1":253,"y1":43,"x2":305,"y2":91},
+              {"sound":"","link":"amerique_latine","x1":243,"y1":163,"x2":309,"y2":239}
+          ]},
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

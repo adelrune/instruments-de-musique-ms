@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/percussn/dara/dara000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Darbouka">Article Wikipédia</a>
+    <script>
+      prefix = "percussn/dara/";
+      suffix = "";
+      sounds = [
+          {"sound":"daraword","link":"","x1":415,"y1":16,"x2":458,"y2":53},
+          {"sound":"darasolo","link":"","x1":280,"y1":240,"x2":341,"y2":290},
+          {"sound":"dara1hit","link":"","x1":150,"y1":60,"x2":259,"y2":141}
+      ];
+      links = [
+          {"sound":"","link":"tambours","x1":265,"y1":373,"x2":311,"y2":424}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":328,"y1":379,"x2":381,"y2":423,links:[
+              {"sound":"","link":"percussions","x1":253,"y1":43,"x2":305,"y2":91},
+              {"sound":"","link":"amerique_latine","x1":243,"y1":163,"x2":309,"y2":239}
+          ]},
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/percussn/djem/djem000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Djemb%C3%A9">Article Wikipédia</a>
+    <script>
+      prefix = "percussn/djem/";
+      suffix = "";
+      sounds = [
+          {"sound":"djemword","link":"","x1":400,"y1":16,"x2":438,"y2":53},
+          {"sound":"djemsolo","link":"","x1":41,"y1":88,"x2":94,"y2":131},
+          {"sound":"djem1hit","link":"","x1":276,"y1":60,"x2":483,"y2":121}
+      ];
+      links = [
+          {"sound":"","link":"tambours","x1":79,"y1":373,"x2":128,"y2":424}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":143,"y1":379,"x2":192,"y2":423,links:[
+              {"sound":"","link":"percussions","x1":253,"y1":43,"x2":305,"y2":91},
+              {"sound":"","link":"afrique","x1":243,"y1":163,"x2":309,"y2":239}
+          ]},
+          {"sound":"","link":"0","x1":482,"y1":134,"x2":589,"y2":183}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/percussn/ghat/ghat000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Ghatam">Article Wikipédia</a>
+    <script>
+      prefix = "percussn/ghat/";
+      suffix = "";
+      sounds = [
+          {"sound":"ghatword","link":"","x1":400,"y1":16,"x2":438,"y2":53},
+          {"sound":"ghatsolo","link":"","x1":44,"y1":163,"x2":90,"y2":208},
+          {"sound":"ghat1hit","link":"","x1":170,"y1":69,"x2":290,"y2":231},
+          {"sound":"ghat2hit","link":"","x1":288,"y1":66,"x2":399,"y2":268}
+      ];
+      links = [
+          {"sound":"","link":"tambours","x1":265,"y1":373,"x2":311,"y2":424}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":328,"y1":379,"x2":381,"y2":423,links:[
+              {"sound":"","link":"percussions","x1":253,"y1":43,"x2":305,"y2":91},
+              {"sound":"","link":"asie_du_sud","x1":243,"y1":183,"x2":309,"y2":239}
+          ]},
+          {"sound":"","link":"0","x1":61,"y1":326,"x2":134,"y2":370}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>
