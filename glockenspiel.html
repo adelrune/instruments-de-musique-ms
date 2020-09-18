@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/percussn/gloc/gloc000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Glockenspiel">Article Wikipédia</a>
+    <script>
+      prefix = "percussn/gloc/";
+      suffix = "";
+      sounds = [
+          {"sound":"glocword","link":"","x1":436,"y1":14,"x2":479,"y2":48},
+          {"sound":"glocsolo","link":"","x1":69,"y1":230,"x2":128,"y2":286}
+      ];
+      links = [
+          {"sound":"","link":"xylophones","x1":265,"y1":373,"x2":311,"y2":424}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":328,"y1":379,"x2":381,"y2":423,links:[
+              {"sound":"","link":"percussions","x1":253,"y1":43,"x2":305,"y2":91}
+          ], sounds:[
+              {"sound":"glocrang","link":"","x1":251,"y1":89,"x2":302,"y2":145}
+          ]}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/percussn/balo/balo000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Balafon">Article Wikipédia</a>
+    <script>
+      prefix = "percussn/balo/";
+      suffix = "";
+      sounds = [
+          {"sound":"baloword","link":"","x1":365,"y1":19,"x2":399,"y2":51},
+          {"sound":"balosolo","link":"","x1":490,"y1":252,"x2":533,"y2":295}
+      ];
+      links = [
+          {"sound":"","link":"xylophones","x1":265,"y1":373,"x2":311,"y2":424}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":328,"y1":379,"x2":381,"y2":423,links:[
+              {"sound":"","link":"percussions","x1":253,"y1":43,"x2":305,"y2":91},
+              {"sound":"","link":"afrique","x1":243,"y1":183,"x2":309,"y2":259}
+          ]},
+          {"sound":"","link":"vues","x1":498,"y1":302,"x2":599,"y2":367}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>
