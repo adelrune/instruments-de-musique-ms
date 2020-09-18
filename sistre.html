@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/percussn/sist/sist000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Sistre">Article Wikipédia</a>
+    <script>
+      prefix = "percussn/sist/";
+      suffix = "";
+      sounds = [
+          {"sound":"sistword","link":"","x1":363,"y1":24,"x2":392,"y2":54},
+          {"sound":"sistsolo","link":"","x1":401,"y1":312,"x2":442,"y2":362}
+      ];
+      links = [
+          {"sound":"","link":"hochets","x1":264,"y1":374,"x2":317,"y2":428}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":331,"y1":380,"x2":382,"y2":427, links:[
+              {"sound":"","link":"percusions","x1":249,"y1":40,"x2":305,"y2":97},
+              {"sound":"","link":"afrique","x1":243,"y1":162,"x2":304,"y2":224}
+          ]}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

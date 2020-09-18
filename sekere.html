@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/percussn/seke/seke000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Cheker%C3%A9">Article Wikipédia</a>
+    <script>
+      prefix = "percussn/seke/";
+      suffix = "";
+      sounds = [
+          {"sound":"sekesolo","link":"","x1":218,"y1":247,"x2":259,"y2":300},
+          {"sound":"sekeword","link":"","x1":363,"y1":21,"x2":396,"y2":53}
+      ];
+      links = [
+          {"sound":"","link":"hochets","x1":48,"y1":374,"x2":98,"y2":428}
+      ];
+      popups = [
+
+          {"sound":"","link":"notes","x1":110,"y1":380,"x2":164,"y2":427, links:[
+              {"sound":"","link":"percusions","x1":249,"y1":40,"x2":305,"y2":97},
+              {"sound":"","link":"afrique","x1":243,"y1":152,"x2":304,"y2":224}
+          ]}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>
