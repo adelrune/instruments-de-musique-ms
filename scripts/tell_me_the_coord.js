@@ -4,7 +4,7 @@ var pos_rect = {sound:"", link:""};
 visualiser = null;
 
 document.addEventListener("click", function(e) {
-    var image = e.target;
+    var image = document.getElementById("img");
     var image_rect = image.getBoundingClientRect();
     if (pos_rect.x1 === undefined) {
         pos_rect.x1 = e.clientX - image_rect.x;
@@ -12,6 +12,14 @@ document.addEventListener("click", function(e) {
     } else {
         pos_rect.x2 = e.clientX - image_rect.x;
         pos_rect.y2 = e.clientY - image_rect.y;
+        xmin = Math.min(pos_rect.x1, pos_rect.x2);
+        xmax = Math.max(pos_rect.x1, pos_rect.x2);
+        ymin = Math.min(pos_rect.y1, pos_rect.y2);
+        ymax = Math.max(pos_rect.y1, pos_rect.y2);
+        pos_rect.x1 = xmin;
+        pos_rect.x2 = xmax;
+        pos_rect.y1 = ymin;
+        pos_rect.y2 = ymax;
         navigator.clipboard.writeText(JSON.stringify(pos_rect));
         pos_rect = {sound:"", link:""};
 
@@ -45,7 +53,7 @@ document.addEventListener("keydown", function(e) {
         visualiser.style.backgroundColor = "rgb(0, 239, 232)";
         visualiser.style.position = "absolute";
         visualiser.style.opacity = "24%";
-        visualiser.style.zIndex = 9001;
+        visualiser.style.zIndex = 2;
         visualiser.style.width = e.clientX - (image_rect.x + pos_rect.x1) + "px";
         visualiser.style.height = e.clientY - (image_rect.y + pos_rect.y1) + "px";
         visualiser.style.left = image_rect.x + pos_rect.x1 + "px";
