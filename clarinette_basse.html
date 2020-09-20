@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/woodwind/bacl/bacl000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Clarinette_basse">Article Wikipédia</a>
+    <script>
+      prefix = "woodwind/bacl/";
+      suffix = "";
+      sounds = [
+          {"sound":"baclword","link":"","x1":448,"y1":18,"x2":480,"y2":52},
+          {"sound":"baclsolo","link":"","x1":40,"y1":204,"x2":88,"y2":250}
+      ];
+      links = [
+          {"sound":"","link":"clarinettes","x1":262,"y1":371,"x2":316,"y2":426}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":331,"y1":375,"x2":376,"y2":427, sounds:[
+              {"sound":"baclrang","link":"","x1":251,"y1":91,"x2":304,"y2":151}
+          ], links:[
+              {"sound":"","link":"bois","x1":256,"y1":41,"x2":300,"y2":92}
+          ]},
+          {"sound":"","link":"vues","x1":458,"y1":73,"x2":552,"y2":204, links:[
+              {"sound":"","link":"@000y","x1":245,"y1":125,"x2":335,"y2":173}
+          ]},
+          {"sound":"","link":"0","x1":27,"y1":146,"x2":70,"y2":176, sounds:[
+              {"sound":"bacl01fx","link":"","x1":183,"y1":207,"x2":258,"y2":235},
+              {"sound":"bacl02fx","link":"","x1":186,"y1":235,"x2":301,"y2":260}
+          ]},
+          {"sound":"","link":"1","x1":491,"y1":211,"x2":562,"y2":241},
+          {"sound":"","link":"2","x1":542,"y1":340,"x2":599,"y2":377}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/woodwind/clar/clar000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/clarinette">Article Wikipédia</a>
+    <script>
+      prefix = "woodwind/clar/";
+      suffix = "";
+      sounds = [
+          {"sound":"clarword","link":"","x1":397,"y1":21,"x2":434,"y2":53},
+          {"sound":"clarsolo","link":"","x1":245,"y1":83,"x2":296,"y2":128}
+      ];
+      links = [
+          {"sound":"","link":"clarinettes","x1":299,"y1":374,"x2":343,"y2":424}
+      ];
+      popups = [
+          {"sound":"","link":"0","x1":198,"y1":62,"x2":235,"y2":89, sounds:[
+              {"sound":"clar06fx","link":"","x1":183,"y1":206,"x2":237,"y2":231},
+              {"sound":"clar07fx","link":"","x1":186,"y1":233,"x2":304,"y2":256}
+          ]},
+          {"sound":"","link":"1","x1":175,"y1":159,"x2":237,"y2":199},
+          {"sound":"","link":"2","x1":295,"y1":271,"x2":393,"y2":325},
+          {"sound":"","link":"vues","x1":78,"y1":284,"x2":203,"y2":365, links:[
+              {"sound":"","link":"@000y","x1":292,"y1":112,"x2":382,"y2":145}
+          ]},
+          {"sound":"","link":"notes","x1":361,"y1":375,"x2":409,"y2":427, sounds:[
+              {"sound":"clarrang","link":"","x1":251,"y1":91,"x2":304,"y2":151}
+          ], links:[
+              {"sound":"","link":"bois","x1":256,"y1":41,"x2":300,"y2":92}
+          ]},
+          {"sound":"","link":"demo","x1":236,"y1":373,"x2":282,"y2":426, sounds:[
+              {"sound":"clarsnts","link":"","x1":2,"y1":34,"x2":285,"y2":117},
+              {"sound":"calrrang","link":"","x1":293,"y1":44,"x2":338,"y2":118},
+              {"sound":"clar10fx","link":"","x1":175,"y1":148,"x2":282,"y2":171},
+              {"sound":"clar03fx","link":"","x1":182,"y1":210,"x2":310,"y2":227}
+          ], links:[
+              {"sound":"","link":"@orch","x1":6,"y1":151,"x2":87,"y2":250, sounds:[
+                  {"sound":"clarorch","link":"","x1":267,"y1":221,"x2":299,"y2":260}
+              ]},
+              {"sound":"","link":"@jazz","x1":98,"y1":158,"x2":167,"y2":246, sounds:[
+                  {"sound":"clarjazz","link":"","x1":260,"y1":217,"x2":297,"y2":255}
+              ]}
+          ]}
+
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

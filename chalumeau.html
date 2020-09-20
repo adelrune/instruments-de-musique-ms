@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/woodwind/chal/chal000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Chalumeau_(musique)">Article Wikipédia</a>
+    <script>
+      prefix = "woodwind/chal/";
+      suffix = "";
+      sounds = [
+          {"sound":"chalword","link":"","x1":409,"y1":12,"x2":470,"y2":57},
+          {"sound":"chalsolo","link":"","x1":66,"y1":166,"x2":117,"y2":215}
+      ];
+      links = [
+          {"sound":"","link":"clarinettes","x1":262,"y1":371,"x2":316,"y2":426}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":331,"y1":375,"x2":376,"y2":427, sounds:[
+              {"sound":"chalrang","link":"","x1":251,"y1":88,"x2":303,"y2":146}
+          ], links:[
+              {"sound":"","link":"bois","x1":256,"y1":41,"x2":300,"y2":92},
+          ]},
+          {"sound":"","link":"vues","x1":488,"y1":280,"x2":594,"y2":364}
+
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>
