@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/strings/pipa/pipa000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Pipa_(instrument)">Article Wikipédia</a>
+    <script>
+      prefix = "strings/pipa/";
+      suffix = "";
+      sounds = [
+          {"sound":"pipaword","link":"","x1":366,"y1":17,"x2":397,"y2":48},
+          {"sound":"pipasolo","link":"","x1":267,"y1":269,"x2":312,"y2":312}
+      ];
+      links = [
+          {"sound":"","link":"luths","x1":267,"y1":373,"x2":315,"y2":421}
+              ];
+      popups = [
+          {"sound":"","link":"vues","x1":43,"y1":69,"x2":163,"y2":159},
+          {"sound":"","link":"notes","x1":331,"y1":373,"x2":377,"y2":426, links:[
+              {"sound":"","link":"cordes","x1":259,"y1":40,"x2":298,"y2":94},
+              {"sound":"","link":"asie_centrale_et_orientale","x1":247,"y1":195,"x2":304,"y2":256}
+          ]}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

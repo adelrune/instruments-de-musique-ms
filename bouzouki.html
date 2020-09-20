@@ -1,0 +1,42 @@
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/strings/bouz/bouz000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Balala%C3%AFka">Article Wikipédia</a>
+    <script>
+      prefix = "strings/bouz/";
+      suffix = "";
+      sounds = [
+          {"sound":"bouzsolo","link":"","x1":171,"y1":122,"x2":219,"y2":165},
+          {"sound":"bouzword","link":"","x1":409,"y1":17,"x2":447,"y2":51}
+      ];
+      links = [
+          {"sound":"","link":"luths","x1":258,"y1":371,"x2":318,"y2":428}
+              ];
+      popups = [
+          {"sound":"","link":"notes","x1":327,"y1":373,"x2":381,"y2":422, links:[
+              {"sound":"","link":"cordes","x1":258,"y1":40,"x2":300,"y2":91},
+              {"sound":"","link":"europe","x1":245,"y1":190,"x2":305,"y2":263}
+          ], sounds:[
+              {"sound":"bouzrang","link":"","x1":250,"y1":92,"x2":301,"y2":146}
+          ]},
+          {"sound":"","link":"vues","x1":51,"y1":85,"x2":166,"y2":166},
+
+      ]
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

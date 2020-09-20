@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/strings/chit/chit000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Chitarrone">Article Wikipédia</a>
+    <script>
+      prefix = "strings/chit/";
+      suffix = "";
+      sounds = [
+          {"sound":"chitword","link":"","x1":423,"y1":17,"x2":455,"y2":52},
+          {"sound":"chitsolo","link":"","x1":241,"y1":240,"x2":289,"y2":283}
+      ];
+      links = [
+          {"sound":"","link":"luths","x1":267,"y1":373,"x2":315,"y2":421}
+
+              ];
+      popups = [
+          {"sound":"","link":"vues","x1":43,"y1":69,"x2":163,"y2":159},
+          {"sound":"","link":"notes","x1":331,"y1":373,"x2":377,"y2":426, links:[
+              {"sound":"","link":"cordes","x1":259,"y1":40,"x2":298,"y2":94}
+          ]}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

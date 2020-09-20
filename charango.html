@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/strings/char/char000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Charango">Article Wikipédia</a>
+    <script>
+      prefix = "strings/char/";
+      suffix = "";
+      sounds = [
+          {"sound":"charword","link":"","x1":421,"y1":20,"x2":452,"y2":48},
+          {"sound":"charsolo","link":"","x1":108,"y1":249,"x2":151,"y2":290}
+      ];
+      links = [
+          {"sound":"","link":"luths","x1":258,"y1":371,"x2":318,"y2":428}
+              ];
+      popups = [
+          {"sound":"","link":"notes","x1":327,"y1":373,"x2":381,"y2":422, links:[
+              {"sound":"","link":"cordes","x1":258,"y1":40,"x2":300,"y2":91},
+              {"sound":"","link":"amerique_latine","x1":249,"y1":193,"x2":306,"y2":252}
+          ]},
+          {"sound":"","link":"vues","x1":35,"y1":292,"x2":144,"y2":362}
+
+      ]
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

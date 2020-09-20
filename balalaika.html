@@ -1,0 +1,38 @@
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/strings/balk/balk000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Balala%C3%AFka">Article Wikipédia</a>
+    <script>
+      prefix = "strings/balk/";
+      suffix = "";
+      sounds = [
+          {"sound":"balkword","link":"","x1":410,"y1":19,"x2":442,"y2":51},
+          {"sound":"balksolo","link":"","x1":549,"y1":240,"x2":596,"y2":282}
+      ];
+      links = [
+          {"sound":"","link":"luths","x1":258,"y1":371,"x2":318,"y2":428}
+              ];
+      popups = [
+          {"sound":"","link":"notes","x1":327,"y1":373,"x2":381,"y2":422, links:[
+              {"sound":"","link":"cordes","x1":258,"y1":40,"x2":300,"y2":91},
+              {"sound":"","link":"europe","x1":245,"y1":205,"x2":305,"y2":263}
+          ]}
+      ]
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

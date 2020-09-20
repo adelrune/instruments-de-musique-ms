@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/percussn/mbir/mbir000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Mbira">Article Wikipédia</a>
+    <script>
+      prefix = "percussn/mbir/";
+      suffix = "";
+      sounds = [
+          {"sound":"mbirword","link":"","x1":361,"y1":14,"x2":406,"y2":55},
+          {"sound":"mbirsolo","link":"","x1":440,"y1":322,"x2":474,"y2":365}
+      ];
+      links = [
+          {"sound":"","link":"guimbardes","x1":264,"y1":374,"x2":317,"y2":428}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":331,"y1":380,"x2":382,"y2":427, links:[
+              {"sound":"","link":"percusions","x1":249,"y1":40,"x2":305,"y2":97},
+              {"sound":"","link":"afrique","x1":248,"y1":191,"x2":306,"y2":254}
+          ]},
+          {"sound":"","link":"vues","x1":484,"y1":297,"x2":598,"y2":363}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

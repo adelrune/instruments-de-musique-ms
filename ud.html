@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/strings/uddd/uddd000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Oud">Article Wikipédia</a>
+    <script>
+      prefix = "strings/uddd/";
+      suffix = "";
+      sounds = [
+          {"sound":"udddsolo","link":"","x1":544,"y1":158,"x2":602,"y2":211},
+          {"sound":"udddword","link":"","x1":357,"y1":17,"x2":390,"y2":53}
+      ];
+      links = [
+          {"sound":"","link":"luths","x1":258,"y1":371,"x2":318,"y2":428}
+              ];
+      popups = [
+          {"sound":"","link":"notes","x1":327,"y1":373,"x2":381,"y2":422, links:[
+              {"sound":"","link":"cordes","x1":258,"y1":40,"x2":300,"y2":91},
+              {"sound":"","link":"afrique","x1":245,"y1":160,"x2":305,"y2":233}
+          ], sounds:[
+              {"sound":"udddrang","link":"","x1":239,"y1":281,"x2":311,"y2":402}
+          ]},
+
+      ]
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

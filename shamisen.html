@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/strings/sham/sham000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/shamisen">Article Wikipédia</a>
+    <script>
+      prefix = "strings/sham/";
+      suffix = "";
+      sounds = [
+          {"sound":"shamword","link":"","x1":410,"y1":19,"x2":448,"y2":52},
+          {"sound":"shamsolo","link":"","x1":247,"y1":258,"x2":297,"y2":303}
+      ];
+      links = [
+          {"sound":"","link":"luths","x1":267,"y1":373,"x2":315,"y2":421}
+              ];
+      popups = [
+          {"sound":"","link":"notes","x1":331,"y1":373,"x2":377,"y2":426, links:[
+              {"sound":"","link":"cordes","x1":259,"y1":40,"x2":298,"y2":94},
+              {"sound":"","link":"asie_centrale_et_orientale","x1":247,"y1":195,"x2":304,"y2":256}
+          ], sounds:[
+              {"sound":"shamrang","link":"","x1":258,"y1":91,"x2":305,"y2":145}
+          ]},
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

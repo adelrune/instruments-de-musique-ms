@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/strings/sitr/sitr000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Sitar">Article Wikipédia</a>
+    <script>
+      prefix = "strings/sitr/";
+      suffix = "";
+      sounds = [
+          {"sound":"sitrword","link":"","x1":367,"y1":16,"x2":404,"y2":49},
+          {"sound":"sitrsolo","link":"","x1":264,"y1":322,"x2":307,"y2":365}
+      ];
+      links = [
+          {"sound":"","link":"luths","x1":235,"y1":379,"x2":285,"y2":428}
+              ];
+      popups = [
+          {"sound":"","link":"vues","x1":49,"y1":81,"x2":165,"y2":167},
+          {"sound":"","link":"notes","x1":304,"y1":375,"x2":346,"y2":425, links:[
+              {"sound":"","link":"cordes","x1":254,"y1":37,"x2":300,"y2":91},
+              {"sound":"","link":"asie_du_sud","x1":243,"y1":191,"x2":307,"y2":258}
+          ], sounds:[
+              {"sound":"sitrrang","link":"","x1":215,"y1":292,"x2":310,"y2":395}
+          ]},
+          {"sound":"","link":"aussi","x1":360,"y1":375,"x2":426,"y2":427, links:[
+              {"sound":"","link":"vina","x1":5,"y1":42,"x2":103,"y2":132},
+              {"sound":"","link":"tabla","x1":114,"y1":47,"x2":209,"y2":133}
+          ]},
+          {"sound":"","link":"2","x1":345,"y1":73,"x2":409,"y2":96},
+          {"sound":"","link":"3","x1":182,"y1":139,"x2":291,"y2":174},
+          {"sound":"","link":"1","x1":172,"y1":211,"x2":233,"y2":239},
+          {"sound":"","link":"0","x1":226,"y1":280,"x2":286,"y2":316}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

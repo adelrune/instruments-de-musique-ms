@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/percussn/jews/jews000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Guimbarde_(instrument)">Article Wikipédia</a>
+    <script>
+      prefix = "percussn/jews/";
+      suffix = "";
+      sounds = [
+          {"sound":"jewsword","link":"","x1":421,"y1":16,"x2":457,"y2":51},
+          {"sound":"jewssolo","link":"","x1":251,"y1":164,"x2":295,"y2":211}
+      ];
+      links = [
+          {"sound":"","link":"guimbardes","x1":264,"y1":374,"x2":317,"y2":428}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":331,"y1":380,"x2":382,"y2":427, links:[
+              {"sound":"","link":"percusions","x1":249,"y1":40,"x2":305,"y2":97}
+          ]}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

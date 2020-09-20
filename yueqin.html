@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/strings/yueq/yueq000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Yueqin">Article Wikipédia</a>
+    <script>
+      prefix = "strings/yueq/";
+      suffix = "";
+      sounds = [
+          {"sound":"yueqsolo","link":"","x1":44,"y1":70,"x2":90,"y2":113},
+          {"sound":"yueqword","link":"","x1":390,"y1":20,"x2":425,"y2":48}
+      ];
+      links = [
+          {"sound":"","link":"luths","x1":267,"y1":373,"x2":315,"y2":421}
+              ];
+      popups = [
+          {"sound":"","link":"notes","x1":331,"y1":373,"x2":377,"y2":426, links:[
+              {"sound":"","link":"cordes","x1":259,"y1":40,"x2":298,"y2":94},
+              {"sound":"","link":"asie_centrale_et_orientale","x1":247,"y1":195,"x2":304,"y2":256}
+          ]},
+          {"sound":"","link":"0","x1":38,"y1":181,"x2":95,"y2":223},
+          {"sound":"","link":"1","x1":283,"y1":119,"x2":333,"y2":147},
+          {"sound":"","link":"vues","x1":482,"y1":168,"x2":594,"y2":234}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

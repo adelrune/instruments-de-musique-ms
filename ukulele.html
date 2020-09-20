@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/strings/ukul/ukul000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Ukul%C3%A9l%C3%A9">Article Wikipédia</a>
+    <script>
+      prefix = "strings/ukul/";
+      suffix = "";
+      sounds = [
+          {"sound":"ukulword","link":"","x1":366,"y1":17,"x2":417,"y2":48},
+          {"sound":"ukulsolo","link":"","x1":267,"y1":269,"x2":312,"y2":312}
+      ];
+      links = [
+          {"sound":"","link":"luths","x1":267,"y1":373,"x2":315,"y2":421}
+              ];
+      popups = [
+          {"sound":"","link":"notes","x1":331,"y1":373,"x2":377,"y2":426, links:[
+              {"sound":"","link":"cordes","x1":259,"y1":40,"x2":298,"y2":94},
+              {"sound":"","link":"amerique_du_nord","x1":247,"y1":195,"x2":304,"y2":256}
+          ]},{"sound":"","link":"vues","x1":154,"y1":278,"x2":272,"y2":365}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>
