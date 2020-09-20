@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/brass/sous/sous000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Soubassophone">Article Wikipédia</a>
+    <script>
+      prefix = "brass/sous/";
+      suffix = "";
+      sounds = [{"sound":"sousword","link":"","x1":494,"y1":16,"x2":530,"y2":51},
+                {"sound":"soussolo","link":"","x1":432,"y1":261,"x2":473,"y2":308}
+      ];
+      links = [
+          {"sound":"","link":"tubas_rel","x1":329,"y1":370,"x2":379,"y2":423},
+      ];
+      popups = [
+          {"sound":"","link":"0","x1":39,"y1":240,"x2":128,"y2":268},
+          {"sound":"","link":"1","x1":332,"y1":288,"x2":397,"y2":321},
+          {"sound":"","link":"vues","x1":483,"y1":269,"x2":594,"y2":361},
+          {"sound":"","link":"notes","x1":392,"y1":372,"x2":444,"y2":426, links:[
+              {"sound":"","link":"cuivres","x1":256,"y1":45,"x2":298,"y2":91}
+          ], sounds:[
+              {"sound":"sousrang","link":"","x1":252,"y1":94,"x2":307,"y2":148}
+          ]}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>
