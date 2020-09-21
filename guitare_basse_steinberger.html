@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/strings/sbgt/sbgt000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Steinberger">Article Wikipédia</a>
+    <script>
+      prefix = "strings/sbgt/";
+      suffix = "";
+      sounds = [
+          {"sound":"sbgtword","link":"","x1":554,"y1":23,"x2":576,"y2":48},
+          {"sound":"sbgtsolo","link":"","x1":472,"y1":184,"x2":506,"y2":222}
+      ];
+      links = [
+          {"sound":"","link":"guitares_basses","x1":229,"y1":373,"x2":280,"y2":425}
+              ];
+      popups = [
+          {"sound":"","link":"notes","x1":294,"y1":371,"x2":346,"y2":428, links:[
+              {"sound":"","link":"cordes","x1":248,"y1":38,"x2":301,"y2":89},
+
+          ], sounds:[
+              {"sound":"sbgtrang","link":"","x1":253,"y1":89,"x2":302,"y2":147}
+          ]},
+          {"sound":"","link":"aussi","x1":357,"y1":374,"x2":416,"y2":425, links:[
+              {"sound":"","link":"contrebasse","x1":7,"y1":38,"x2":104,"y2":135},
+              {"sound":"","link":"guitare_electrique","x1":112,"y1":35,"x2":200,"y2":135}
+          ]},
+          {"sound":"","link":"vues","x1":253,"y1":77,"x2":371,"y2":162}
+      ]
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

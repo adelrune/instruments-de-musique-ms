@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/strings/bsgt/bsgt000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Guitare_basse">Article Wikipédia</a>
+    <script>
+      prefix = "strings/bsgt/";
+      suffix = "";
+      sounds = [
+          {"sound":"bsgtsolo","link":"","x1":251,"y1":212,"x2":287,"y2":243},
+          {"sound":"bsgtword","link":"","x1":424,"y1":17,"x2":461,"y2":50}
+
+      ];
+      links = [
+          {"sound":"","link":"guitares_basses","x1":261,"y1":378,"x2":314,"y2":429}
+              ];
+      popups = [
+          {"sound":"","link":"notes","x1":329,"y1":371,"x2":377,"y2":428, links:[
+              {"sound":"","link":"cordes","x1":248,"y1":38,"x2":301,"y2":89},
+
+          ], sounds:[
+              {"sound":"bsgtrang","link":"","x1":253,"y1":89,"x2":302,"y2":147}
+          ]},
+          {"sound":"","link":"aussi","x1":386,"y1":374,"x2":450,"y2":425, links:[
+              {"sound":"","link":"guitare_electrique","x1":7,"y1":38,"x2":104,"y2":135},
+              {"sound":"","link":"batterie","x1":112,"y1":35,"x2":200,"y2":135},
+              {"sound":"","link":"guitare_classique","x1":3,"y1":143,"x2":104,"y2":234},
+              {"sound":"","link":"contrebasse","x1":113,"y1":142,"x2":208,"y2":234}
+          ]},
+          {"sound":"","link":"vues","x1":161,"y1":278,"x2":277,"y2":364},
+          {"sound":"","link":"demo","x1":200,"y1":375,"x2":248,"y2":420, sounds:[
+              {"sound":"bsgtsnts","link":"","x1":10,"y1":36,"x2":285,"y2":116},
+              {"sound":"bsgtrang","link":"","x1":287,"y1":37,"x2":345,"y2":118},
+              {"sound":"bsgt01fx","link":"","x1":177,"y1":148,"x2":247,"y2":168},
+              {"sound":"bsgt17fx","link":"","x1":178,"y1":209,"x2":256,"y2":235}
+
+          ], links:[
+              {"sound":"","link":"@rega","x1":7,"y1":155,"x2":83,"y2":250, sounds:[
+                  {"sound":"bsgtrega","link":"","x1":259,"y1":179,"x2":297,"y2":228}
+              ]},
+              {"sound":"","link":"@jroc","x1":91,"y1":156,"x2":173,"y2":248, sounds:[
+                  {"sound":"bsgtjroc","link":"","x1":263,"y1":211,"x2":303,"y2":255},
+
+              ]}
+          ]},
+          {"sound":"","link":"0","x1":129,"y1":75,"x2":195,"y2":124},
+          {"sound":"","link":"3","x1":455,"y1":87,"x2":581,"y2":130},
+          {"sound":"","link":"2","x1":89,"y1":238,"x2":164,"y2":275},
+          {"sound":"","link":"1","x1":70,"y1":273,"x2":144,"y2":299},
+          {"sound":"","link":"4","x1":53,"y1":304,"x2":120,"y2":331, sounds:[
+              {"sound":"bsgt01st","link":"","x1":326,"y1":83,"x2":363,"y2":109},
+              {"sound":"bsgt02st","link":"","x1":324,"y1":116,"x2":362,"y2":146},
+              {"sound":"bsgt03st","link":"","x1":325,"y1":157,"x2":364,"y2":190},
+              {"sound":"bsgt04st","link":"","x1":326,"y1":196,"x2":359,"y2":230}
+          ]}
+      ]
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>
