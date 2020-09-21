@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/woodwind/curt/curt000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Dou%C3%A7aine">Article Wikipédia</a>
+    <script>
+      prefix = "woodwind/curt/";
+      suffix = "";
+      sounds = [
+          {"sound":"curtsolo","link":"","x1":113,"y1":161,"x2":167,"y2":210},
+          {"sound":"curtword","link":"","x1":375,"y1":19,"x2":425,"y2":51}
+      ];
+      links = [
+          {"sound":"","link":"bassons","x1":264,"y1":374,"x2":317,"y2":428}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":331,"y1":380,"x2":382,"y2":427, links:[
+              {"sound":"","link":"percusions","x1":249,"y1":40,"x2":305,"y2":97},
+          ], sounds:[
+              {"sound":"curtrang","link":"","x1":248,"y1":99,"x2":311,"y2":159}
+          ]},
+
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

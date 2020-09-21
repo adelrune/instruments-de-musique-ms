@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/woodwind/dbsn/dbsn000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/contrebasson">Article Wikipédia</a>
+    <script>
+      prefix = "woodwind/dbsn/";
+      suffix = "";
+      sounds = [
+          {"sound":"dbsnword","link":"","x1":447.5,"y1":18,"x2":473.5,"y2":49},
+          {"sound":"dbsnsolo","link":"","x1":472.5,"y1":108,"x2":525.5,"y2":149}
+      ];
+      links = [
+          {"sound":"","link":"bassons","x1":264,"y1":374,"x2":317,"y2":428}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":331,"y1":380,"x2":382,"y2":427, links:[
+              {"sound":"","link":"percusions","x1":249,"y1":40,"x2":305,"y2":97},
+          ], sounds:[
+              {"sound":"dbsnrang","link":"","x1":248,"y1":99,"x2":311,"y2":159}
+          ]},
+          {"sound":"","link":"vues","x1":481.5,"y1":157,"x2":598.5,"y2":238},
+          {"sound":"","link":"0","x1":86.5,"y1":158,"x2":142.5,"y2":193, sounds:[
+              {"sound":"dbsn01fx","link":"","x1":32,"y1":276,"x2":139,"y2":299},
+              {"sound":"dbsn02fx","link":"","x1":144,"y1":267,"x2":282,"y2":302}
+          ]},
+          {"sound":"","link":"4","x1":398.5,"y1":132,"x2":457.5,"y2":159, sounds:[
+              {"sound":"dbsn03fx","link":"","x1":37,"y1":329,"x2":191,"y2":359}
+          ]},
+          {"sound":"","link":"2","x1":489.5,"y1":270,"x2":573.5,"y2":300},
+          {"sound":"","link":"1","x1":541.5,"y1":333,"x2":618.5,"y2":371}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>
