@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/strings/12gt/12gt000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Guitare_%C3%A0_douze_cordes">Article Wikipédia</a>
+    <script>
+      prefix = "strings/12gt/";
+      suffix = "";
+      sounds = [
+          {"sound":"12gtsolo","link":"","x1":319,"y1":110,"x2":365,"y2":151},
+          {"sound":"12gtword","link":"","x1":504,"y1":18,"x2":541,"y2":49}
+      ];
+      links = [
+          {"sound":"","link":"guitares_acoustiques","x1":262,"y1":379,"x2":317,"y2":425},
+              ];
+      popups = [
+          {"sound":"","link":"notes","x1":331,"y1":375,"x2":378,"y2":426, links:[
+              {"sound":"","link":"cordes","x1":250,"y1":38,"x2":307,"y2":89},
+          ], sounds:[
+              {"sound":"12gtrang","link":"","x1":251,"y1":95,"x2":308,"y2":152}
+          ]
+          },
+          {"sound":"","link":"vues","x1":204,"y1":270,"x2":317,"y2":363},
+          {"sound":"","link":"1","x1":537,"y1":111,"x2":586,"y2":145},
+          {"sound":"","link":"0","x1":139,"y1":286,"x2":198,"y2":313},
+
+      ];
+
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

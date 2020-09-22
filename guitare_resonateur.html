@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/strings/regt/regt000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Dobro">Article Wikipédia</a>
+    <script>
+      prefix = "strings/regt/";
+      suffix = "";
+      sounds = [
+          {"sound":"regtword","link":"","x1":425,"y1":9,"x2":499,"y2":57},
+          {"sound":"regtsolo","link":"","x1":276,"y1":271,"x2":316,"y2":324}
+      ];
+      links = [
+          {"sound":"","link":"guitares_acoustiques","x1":227,"y1":379,"x2":282,"y2":425},
+              ];
+      popups = [
+          {"sound":"","link":"notes","x1":298,"y1":375,"x2":349,"y2":426, links:[
+              {"sound":"","link":"cordes","x1":250,"y1":38,"x2":307,"y2":89},
+              {"sound":"","link":"amerique_du_nord","x1":246,"y1":188,"x2":306,"y2":255}
+          ], sounds:[
+              {"sound":"regtrang","link":"","x1":251,"y1":90,"x2":304,"y2":145}
+          ]
+          },{"sound":"","link":"vues","x1":160,"y1":278,"x2":272,"y2":362},
+          {"sound":"","link":"0","x1":83,"y1":265,"x2":140,"y2":302},
+          {"sound":"","link":"1","x1":160,"y1":251,"x2":236,"y2":277},
+          {"sound":"","link":"aussi","x1":358,"y1":369,"x2":417,"y2":430, links:[
+              {"sound":"","link":"harmonica","x1":3,"y1":40,"x2":107,"y2":136},
+              {"sound":"","link":"guitare_electrique","x1":112,"y1":44,"x2":210,"y2":135}
+          ]}
+      ];
+
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

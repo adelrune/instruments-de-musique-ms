@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/woodwind/khan/khan000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Kh%C3%AAn">Article Wikipédia</a>
+    <script>
+      prefix = "woodwind/khan/";
+      suffix = "";
+      sounds = [
+          {"sound":"khanword","link":"","x1":289,"y1":12,"x2":330,"y2":50},
+          {"sound":"khansolo","link":"","x1":45,"y1":203,"x2":91,"y2":248}
+      ];
+      links = [
+          {"sound":"","link":"harmonicas","x1":260,"y1":376,"x2":314,"y2":429}
+      ];
+      popups = [
+          {"sound":"","link":"vues","x1":137,"y1":270,"x2":238,"y2":364},
+          {"sound":"","link":"notes","x1":328,"y1":372,"x2":380,"y2":426, links:[
+              {"sound":"","link":"bois","x1":256,"y1":45,"x2":298,"y2":91},
+              {"sound":"","link":"asie_du_sud_est","x1":247,"y1":188,"x2":306,"y2":254}
+          ], sounds:[
+              {"sound":"khanrang","link":"","x1":250,"y1":93,"x2":305,"y2":144}
+          ]},
+          {"sound":"","link":"0","x1":361,"y1":196,"x2":434,"y2":224}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

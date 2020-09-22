@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/strings/trgt/trgt000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Antonio_de_Torres">Article Wikipédia</a>
+    <script>
+      prefix = "strings/trgt/";
+      suffix = "";
+      sounds = [
+          {"sound":"trgtword","link":"","x1":425,"y1":9,"x2":479,"y2":57},
+          {"sound":"trgtsolo","link":"","x1":435,"y1":94,"x2":481,"y2":134}
+      ];
+      links = [
+          {"sound":"","link":"guitares_acoustiques","x1":262,"y1":379,"x2":317,"y2":425},
+              ];
+      popups = [
+          {"sound":"","link":"notes","x1":331,"y1":375,"x2":378,"y2":426, links:[
+              {"sound":"","link":"cordes","x1":250,"y1":38,"x2":307,"y2":89},
+          ], sounds:[
+          ]
+          },
+          {"sound":"","link":"vues","x1":204,"y1":270,"x2":317,"y2":363}
+      ];
+
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>
