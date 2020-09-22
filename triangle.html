@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/percussn/tria/tria000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Triangle_(instrument)">Article Wikipédia</a>
+    <script>
+      prefix = "percussn/tria/";
+      suffix = "";
+      sounds = [
+          {"sound":"triaword","link":"","x1":389,"y1":13,"x2":453,"y2":56},
+          {"sound":"triasolo","link":"","x1":312,"y1":76,"x2":359,"y2":124},
+          {"sound":"tria1hit","link":"","x1":133,"y1":157,"x2":352,"y2":280},{"sound":"tria1hit","link":"","x1":166,"y1":74,"x2":312,"y2":183}
+      ];
+      links = [
+          {"sound":"","link":"carillons","x1":264,"y1":374,"x2":317,"y2":428}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":331,"y1":380,"x2":382,"y2":427, links:[
+              {"sound":"","link":"percussions","x1":249,"y1":40,"x2":305,"y2":97},
+          ]}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/percussn/kuge/kuge000a.png"></image>
+    </div>
+    </br>
+    <script>
+      prefix = "percussn/kuge/";
+      suffix = "";
+      sounds = [
+          {"sound":"kugeword","link":"","x1":368,"y1":19,"x2":410,"y2":53},
+          {"sound":"kugesolo","link":"","x1":42,"y1":299,"x2":90,"y2":340},
+          {"sound":"kuge1hit","link":"","x1":212,"y1":149,"x2":322,"y2":363},
+          {"sound":"kuge2hit","link":"","x1":344,"y1":134,"x2":477,"y2":364}
+      ];
+      links = [
+          {"sound":"","link":"carillons","x1":264,"y1":374,"x2":317,"y2":428}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":331,"y1":380,"x2":382,"y2":427, links:[
+              {"sound":"","link":"percussions","x1":249,"y1":40,"x2":305,"y2":97},
+              {"sound":"","link":"afrique","x1":248,"y1":196,"x2":308,"y2":256}
+          ]}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/percussn/ochm/ochm000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/cloches_tubulaires">Article Wikipédia</a>
+    <script>
+      prefix = "percussn/ochm/";
+      suffix = "";
+      sounds = [
+          {"sound":"ochmword","link":"","x1":481,"y1":17,"x2":520,"y2":48},
+          {"sound":"ochmsolo","link":"","x1":463,"y1":307,"x2":521,"y2":350}
+      ];
+      links = [
+          {"sound":"","link":"carillons","x1":319,"y1":377,"x2":369,"y2":429},
+
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":378,"y1":380,"x2":432,"y2":427, links:[
+              {"sound":"","link":"percussions","x1":249,"y1":40,"x2":305,"y2":97},
+          ], sounds:[
+              {"sound":"ochmrang","link":"","x1":251,"y1":102,"x2":305,"y2":161}
+          ]}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

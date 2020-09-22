@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/percussn/hanb/hanb000a.png"></image>
+    </div>
+    </br>
+    <script>
+      prefix = "percussn/hanb/";
+      suffix = "";
+      sounds = [
+          {"sound":"hanbword","link":"","x1":400,"y1":16,"x2":442,"y2":52},
+          {"sound":"hanbsolo","link":"","x1":309,"y1":267,"x2":367,"y2":324},
+          {"sound":"hanb1hit","link":"","x1":373,"y1":238,"x2":508,"y2":380}
+      ];
+      links = [
+          {"sound":"","link":"carillons","x1":264,"y1":374,"x2":317,"y2":428}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":331,"y1":380,"x2":382,"y2":427, links:[
+              {"sound":"","link":"percussions","x1":249,"y1":40,"x2":305,"y2":97},
+          ]}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>
