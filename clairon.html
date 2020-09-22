@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/brass/bugl/bugl000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/clairon">Article Wikipédia</a>
+    <script>
+      prefix = "brass/bugl/";
+      suffix = "";
+      sounds = [
+          {"sound":"buglword","link":"","x1":358,"y1":15,"x2":407,"y2":53},
+          {"sound":"buglsolo","link":"","x1":486,"y1":227,"x2":526,"y2":273}
+      ];
+      links = [
+          {"sound":"","link":"cornets_a_piston","x1":260,"y1":376,"x2":314,"y2":429}
+      ];
+      popups = [
+          {"sound":"","link":"vues","x1":48,"y1":288,"x2":171,"y2":364},
+          {"sound":"","link":"notes","x1":328,"y1":372,"x2":380,"y2":426, links:[
+              {"sound":"","link":"cuivres","x1":256,"y1":45,"x2":298,"y2":91}
+          ], sounds:[
+          ]},
+          {"sound":"","link":"0","x1":361,"y1":196,"x2":434,"y2":224}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>
