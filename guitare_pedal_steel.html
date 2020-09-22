@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/strings/psgt/psgt000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Pedal_steel_guitar">Article Wikipédia</a>
+    <script>
+      prefix = "strings/psgt/";
+      suffix = "";
+      sounds = [
+          {"sound":"psgtsolo","link":"","x1":45,"y1":276,"x2":89,"y2":320},
+          {"sound":"psgtword","link":"","x1":466,"y1":20,"x2":512,"y2":50}
+
+      ];
+      links = [
+          {"sound":"","link":"guitares_electriques","x1":262,"y1":379,"x2":317,"y2":425},
+              ];
+      popups = [
+          {"sound":"","link":"notes","x1":331,"y1":375,"x2":378,"y2":426, links:[
+              {"sound":"","link":"cordes","x1":250,"y1":38,"x2":307,"y2":89},
+          ], sounds:[
+          ]
+          },
+          {"sound":"","link":"vues","x1":104,"y1":281,"x2":246,"y2":368}
+      ];
+
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

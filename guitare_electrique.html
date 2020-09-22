@@ -1,0 +1,93 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/strings/elgt/elgt000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/guitare_electrique">Article Wikipédia</a>
+    <script>
+      prefix = "strings/elgt/";
+      suffix = "";
+      sounds = [
+          {"sound":"elgtword","link":"","x1":466,"y1":20,"x2":512,"y2":50},
+          {"sound":"elgtsolo","link":"","x1":243,"y1":295,"x2":280,"y2":336}
+
+      ];
+      links = [
+          {"sound":"","link":"guitares_electriques","x1":262,"y1":379,"x2":317,"y2":425},
+              ];
+      popups = [
+          {"sound":"","link":"notes","x1":331,"y1":375,"x2":378,"y2":426, links:[
+              {"sound":"","link":"cordes","x1":250,"y1":38,"x2":307,"y2":89},
+          ], sounds:[
+              {"sound":"elgtrang","link":"","x1":252,"y1":94,"x2":305,"y2":146}
+          ]
+          },
+          {"sound":"","link":"vues","x1":344,"y1":67,"x2":472,"y2":152, links:[
+              {"sound":"","link":"@000y","x1":127,"y1":31,"x2":233,"y2":76}
+          ]},
+          {"sound":"","link":"demo","x1":203,"y1":375,"x2":252,"y2":427,
+           sounds:[
+               {"sound":"elgtsnts","link":"","x1":4,"y1":33,"x2":284,"y2":119},
+               {"sound":"elgt11fx","link":"","x1":181,"y1":152,"x2":264,"y2":171},
+               {"sound":"elgt02fx","link":"","x1":184,"y1":203,"x2":295,"y2":223},
+               {"sound":"elgtrang","link":"","x1":287,"y1":38,"x2":341,"y2":117}
+           ],
+           links:[
+               {"sound":"","link":"@meta","x1":5,"y1":156,"x2":82,"y2":247, sounds:[
+                   {"sound":"elgtmeta","link":"","x1":259,"y1":209,"x2":301,"y2":249}
+               ]},
+               {"sound":"","link":"@roll","x1":90,"y1":151,"x2":172,"y2":249, sounds:[
+                   {"sound":"elgtroll","link":"","x1":256,"y1":196,"x2":302,"y2":237}
+               ]},
+               {"sound":"","link":"@pop","x1":4,"y1":252,"x2":83,"y2":348, sounds:[
+                   {"sound":"elgtpop","link":"","x1":261,"y1":250,"x2":304,"y2":288}
+               ]},
+               {"sound":"","link":"@funk","x1":91,"y1":255,"x2":173,"y2":347, sounds:[
+                   {"sound":"elgtfunk","link":"","x1":259,"y1":163,"x2":304,"y2":211}
+               ]}
+           ]
+          },
+          {"sound":"","link":"aussi","x1":388,"y1":378,"x2":445,"y2":424, links:[
+              {"sound":"","link":"guitare_classique","x1":2,"y1":43,"x2":107,"y2":136},
+              {"sound":"","link":"guitare_a_codes_metalliques","x1":115,"y1":45,"x2":211,"y2":137},
+              {"sound":"","link":"guitare_basse","x1":5,"y1":144,"x2":107,"y2":234},
+              {"sound":"","link":"batterie","x1":114,"y1":142,"x2":207,"y2":235}
+          ]},
+          {"sound":"","link":"0","x1":105,"y1":60,"x2":171,"y2":84, sounds:[
+              {"sound":"elgt01st","link":"","x1":177,"y1":57,"x2":212,"y2":84},
+              {"sound":"elgt02st","link":"","x1":178,"y1":87,"x2":206,"y2":106},
+              {"sound":"elgt03st","link":"","x1":176,"y1":107,"x2":206,"y2":130},
+              {"sound":"elgt04st","link":"","x1":176,"y1":130,"x2":207,"y2":151},
+              {"sound":"elgt05st","link":"","x1":175,"y1":152,"x2":206,"y2":174},
+              {"sound":"elgt06st","link":"","x1":177,"y1":176,"x2":208,"y2":198}
+          ]},
+          {"sound":"","link":"1","x1":203,"y1":63,"x2":258,"y2":91},
+          {"sound":"","link":"5","x1":507,"y1":105,"x2":562,"y2":131},
+          {"sound":"","link":"4","x1":31,"y1":262,"x2":107,"y2":294},
+          {"sound":"","link":"2","x1":144,"y1":253,"x2":269,"y2":289, sounds:[
+              {"sound":"elgt14fx","link":"","x1":14,"y1":132,"x2":115,"y2":159},
+              {"sound":"elgt15fx","link":"","x1":126,"y1":134,"x2":223,"y2":160},
+              {"sound":"elgt16fx","link":"","x1":246,"y1":136,"x2":345,"y2":156}
+          ]},
+          {"sound":"","link":"3","x1":27,"y1":300,"x2":120,"y2":330},
+          {"sound":"","link":"6","x1":134,"y1":317,"x2":227,"y2":347, sounds:[
+              {"sound":"elgt10fx","link":"","x1":181,"y1":199,"x2":307,"y2":233}
+          ]}
+      ];
+
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>
