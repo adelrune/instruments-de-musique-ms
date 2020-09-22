@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/strings/krar/krar000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Krar">Article Wikipédia</a>
+    <script>
+      prefix = "strings/krar/";
+      suffix = "";
+      sounds = [
+
+          {"sound":"krarword","link":"","x1":438,"y1":18,"x2":468,"y2":54},
+          {"sound":"krarsolo","link":"","x1":339,"y1":263,"x2":389,"y2":328}
+
+      ];
+      links = [
+          {"sound":"","link":"harpes","x1":262,"y1":373,"x2":315,"y2":429}
+      ];
+
+      popups = [
+          {"sound":"","link":"notes","x1":331,"y1":375,"x2":382,"y2":426, links:[
+              {"sound":"","link":"cordes","x1":250,"y1":39,"x2":301,"y2":94},
+              {"sound":"","link":"afrique","x1":241,"y1":203,"x2":306,"y2":267}
+          ]},
+          {"sound":"","link":"vues","x1":466,"y1":265,"x2":572,"y2":367}
+      ];
+
+
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

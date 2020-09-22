@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/percussn/wood/wood000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Wood-block">Article Wikipédia</a>
+    <script>
+      prefix = "percussn/wood/";
+      suffix = "";
+      sounds = [
+          {"sound":"woodsolo","link":"","x1":76,"y1":326,"x2":124,"y2":364},
+          {"sound":"woodword","link":"","x1":424,"y1":17,"x2":462,"y2":57},
+          {"sound":"wood1hit","link":"","x1":122,"y1":88,"x2":559,"y2":242}
+      ];
+      links = [
+          {"sound":"","link":"woodblocks","x1":264,"y1":374,"x2":317,"y2":428},
+
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":331,"y1":380,"x2":382,"y2":427, links:[
+              {"sound":"","link":"percussions","x1":249,"y1":40,"x2":305,"y2":97},
+          ]}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

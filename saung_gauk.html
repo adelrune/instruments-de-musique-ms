@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/strings/saga/saga000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Saung">Article Wikipédia</a>
+    <script>
+      prefix = "strings/saga/";
+      suffix = "";
+      sounds = [
+
+          {"sound":"sagaword","link":"","x1":428,"y1":18,"x2":468,"y2":54},
+          {"sound":"sagasolo","link":"","x1":44,"y1":317,"x2":91,"y2":365}
+      ];
+      links = [
+          {"sound":"","link":"harpes","x1":262,"y1":373,"x2":315,"y2":429}
+      ];
+
+      popups = [
+          {"sound":"","link":"notes","x1":331,"y1":375,"x2":382,"y2":426, links:[
+              {"sound":"","link":"cordes","x1":250,"y1":39,"x2":301,"y2":84},
+              {"sound":"","link":"asie_du_sud_est","x1":237,"y1":165,"x2":311,"y2":232}
+          ], sounds:[
+              {"sound":"sagarang","link":"","x1":255,"y1":90,"x2":300,"y2":150},
+
+          ]}
+      ];
+
+
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

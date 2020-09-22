@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/percussn/ttbl/ttbl000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Wood-block">Article Wikipédia</a>
+    <script>
+      prefix = "percussn/ttbl/";
+      suffix = "";
+      sounds = [
+          {"sound":"ttblsolo","link":"","x1":479,"y1":161,"x2":540,"y2":222},
+          {"sound":"ttblword","link":"","x1":505,"y1":10,"x2":562,"y2":60},
+          {"sound":"ttbl1hit","link":"","x1":104,"y1":8,"x2":253,"y2":119},
+          {"sound":"ttbl2hit","link":"","x1":284,"y1":86,"x2":443,"y2":196}
+      ];
+      links = [
+          {"sound":"","link":"woodblocks","x1":264,"y1":374,"x2":317,"y2":428}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":331,"y1":380,"x2":382,"y2":427, links:[
+              {"sound":"","link":"percussions","x1":249,"y1":40,"x2":305,"y2":97},
+          ]}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

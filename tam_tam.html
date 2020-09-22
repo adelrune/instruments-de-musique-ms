@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/percussn/ttam/ttam000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Tam-tam">Article Wikipédia</a>
+    <script>
+      prefix = "percussn/ttam/";
+      suffix = "";
+      sounds = [
+          {"sound":"ttamword","link":"","x1":228,"y1":17,"x2":264,"y2":51},
+          {"sound":"ttamsolo","link":"","x1":514,"y1":322,"x2":558,"y2":365}
+      ];
+      links = [
+          {"sound":"","link":"gongs","x1":58,"y1":376,"x2":114,"y2":431}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":132,"y1":380,"x2":170,"y2":427, links:[
+              {"sound":"","link":"percussions","x1":249,"y1":40,"x2":305,"y2":97},
+          ]}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

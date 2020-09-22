@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/percussn/tebl/tebl000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Wood-block">Article Wikipédia</a>
+    <script>
+      prefix = "percussn/tebl/";
+      suffix = "";
+      sounds = [
+          {"sound":"teblsolo","link":"","x1":384,"y1":68,"x2":420,"y2":113},
+          {"sound":"teblword","link":"","x1":357,"y1":12,"x2":408,"y2":58},
+          {"sound":"tebl1hit","link":"","x1":39,"y1":93,"x2":135,"y2":206},
+          {"sound":"tebl2hit","link":"","x1":144,"y1":107,"x2":256,"y2":230},
+          {"sound":"tebl3hit","link":"","x1":258,"y1":110,"x2":409,"y2":260}
+      ];
+      links = [
+          {"sound":"","link":"woodblocks","x1":264,"y1":374,"x2":317,"y2":428},
+
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":331,"y1":380,"x2":382,"y2":427, links:[
+              {"sound":"","link":"percussions","x1":249,"y1":40,"x2":305,"y2":97},
+              {"sound":"","link":"asie_centrale_et_orientale","x1":248,"y1":153,"x2":307,"y2":212}
+          ]}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

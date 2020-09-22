@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/strings/beri/beri000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Berimbau">Article Wikipédia</a>
+    <script>
+      prefix = "strings/beri/";
+      suffix = "";
+      sounds = [
+          {"sound":"beriword","link":"","x1":415,"y1":18,"x2":444,"y2":51},
+          {"sound":"berisolo","link":"","x1":390,"y1":164,"x2":435,"y2":209}
+
+      ];
+      links = [
+          {"sound":"","link":"harpes","x1":262,"y1":373,"x2":315,"y2":429}
+      ];
+
+      popups = [
+          {"sound":"","link":"notes","x1":331,"y1":375,"x2":382,"y2":426, links:[
+              {"sound":"","link":"cordes","x1":250,"y1":39,"x2":301,"y2":94},
+              {"sound":"","link":"amerique_latine","x1":249,"y1":151,"x2":307,"y2":216}
+          ]}
+      ];
+
+
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>
