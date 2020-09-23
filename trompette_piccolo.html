@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/brass/pitr/pitr000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Trompette_piccolo">Article Wikipédia</a>
+    <script>
+      prefix = "brass/pitr/";
+      suffix = "";
+      sounds = [
+      {"sound":"pitrsolo","link":"","x1":97,"y1":253,"x2":144,"y2":299},
+          {"sound":"pitrword","link":"","x1":467,"y1":15,"x2":504,"y2":52}
+      ];
+      links = [
+          {"sound":"","link":"trompettes","x1":260,"y1":376,"x2":314,"y2":429}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":328,"y1":372,"x2":380,"y2":426, links:[
+              {"sound":"","link":"cuivres","x1":256,"y1":45,"x2":298,"y2":91},
+              {"sound":"","link":"oceanie","x1":252,"y1":195,"x2":308,"y2":250}
+          ], sounds:[
+              {"sound":"pitrrang","link":"","x1":254,"y1":90,"x2":303,"y2":149}
+          ]},
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

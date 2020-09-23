@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/brass/crnt/crnt000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/cornet_a_bouquin">Article Wikipédia</a>
+    <script>
+      prefix = "brass/crnt/";
+      suffix = "";
+      sounds = [
+          {"sound":"crntword","link":"","x1":457,"y1":15,"x2":504,"y2":52},
+          {"sound":"crntsolo","link":"","x1":209,"y1":323,"x2":254,"y2":366}
+      ];
+      links = [
+          {"sound":"","link":"trompettes","x1":228,"y1":378,"x2":281,"y2":431}
+      ];
+      popups = [
+
+          {"sound":"","link":"notes","x1":296,"y1":372,"x2":345,"y2":426, links:[
+              {"sound":"","link":"cuivres","x1":256,"y1":45,"x2":298,"y2":91},
+          ], sounds:[
+              {"sound":"crntrang","link":"","x1":254,"y1":90,"x2":303,"y2":149}
+          ]},
+          {"sound":"","link":"aussi","x1":357,"y1":378,"x2":412,"y2":424, links:[
+              {"sound":"","link":"hautbois_ancien","x1":2,"y1":43,"x2":107,"y2":136},
+              {"sound":"","link":"saqueboute","x1":115,"y1":45,"x2":211,"y2":137},
+          ]}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

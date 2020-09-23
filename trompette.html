@@ -1,0 +1,87 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/brass/trum/trum000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/trompette">Article Wikipédia</a>
+    <script>
+      prefix = "brass/trum/";
+      suffix = "";
+      sounds = [
+          {"sound":"trumword","link":"","x1":386,"y1":15,"x2":430,"y2":53},
+          {"sound":"trumsolo","link":"","x1":61,"y1":254,"x2":117,"y2":300}
+
+      ];
+      links = [
+          {"sound":"","link":"trompettes","x1":262,"y1":379,"x2":317,"y2":425},
+              ];
+      popups = [
+          {"sound":"","link":"notes","x1":331,"y1":375,"x2":378,"y2":426, links:[
+              {"sound":"","link":"cordes","x1":250,"y1":38,"x2":307,"y2":89},
+          ], sounds:[
+              {"sound":"trumrang","link":"","x1":252,"y1":94,"x2":305,"y2":146}
+          ]
+          },
+          {"sound":"","link":"vues","x1":498,"y1":262,"x2":607,"y2":341},
+          {"sound":"","link":"demo","x1":203,"y1":375,"x2":252,"y2":427,
+           sounds:[
+               {"sound":"trumsnts","link":"","x1":4,"y1":33,"x2":284,"y2":119},
+               {"sound":"trum04fx","link":"","x1":181,"y1":152,"x2":264,"y2":171},
+               {"sound":"trum09fx","link":"","x1":184,"y1":203,"x2":295,"y2":223},
+               {"sound":"trum11fx","link":"","x1":179,"y1":268,"x2":241,"y2":290},
+               {"sound":"trumrang","link":"","x1":287,"y1":38,"x2":341,"y2":117}
+           ],
+           links:[
+               {"sound":"","link":"@orch","x1":5,"y1":156,"x2":82,"y2":247, sounds:[
+                   {"sound":"trumorch","link":"","x1":265,"y1":237,"x2":303,"y2":271}
+               ]},
+               {"sound":"","link":"@jazz","x1":90,"y1":151,"x2":172,"y2":249, sounds:[
+                   {"sound":"trumjazz","link":"","x1":256,"y1":196,"x2":302,"y2":237}
+               ]},
+               {"sound":"","link":"@rnb","x1":4,"y1":252,"x2":83,"y2":348, sounds:[
+                   {"sound":"trumrnb","link":"","x1":261,"y1":176,"x2":300,"y2":223}
+               ]},
+               {"sound":"","link":"@latn","x1":91,"y1":255,"x2":173,"y2":347, sounds:[
+                   {"sound":"trumlatn","link":"","x1":266,"y1":223,"x2":303,"y2":260}
+               ]}
+           ]
+          },
+          {"sound":"","link":"aussi","x1":388,"y1":378,"x2":445,"y2":424, links:[
+              {"sound":"","link":"bugle","x1":2,"y1":43,"x2":107,"y2":136},
+              {"sound":"","link":"cornet_a_piston","x1":115,"y1":45,"x2":211,"y2":137},
+          ]},
+          {"sound":"","link":"4","x1":54,"y1":65,"x2":131,"y2":102, sounds:[
+              {"sound":"trum07fx","link":"","x1":29,"y1":233,"x2":120,"y2":267},
+              {"sound":"trum08fx","link":"","x1":154,"y1":235,"x2":268,"y2":271}
+          ]},
+          {"sound":"","link":"1","x1":168,"y1":71,"x2":231,"y2":112, sounds:[
+              {"sound":"trum11fx","link":"","x1":190,"y1":221,"x2":312,"y2":250}
+          ]},
+          {"sound":"","link":"5","x1":485,"y1":60,"x2":576,"y2":101, sounds:[
+              {"sound":"trum06fx","link":"","x1":242,"y1":101,"x2":360,"y2":125},
+              {"sound":"trum12fx","link":"","x1":410,"y1":103,"x2":529,"y2":126},
+              {"sound":"trum03fx","link":"","x1":245,"y1":237,"x2":349,"y2":265},
+              {"sound":"trum02fx","link":"","x1":413,"y1":240,"x2":553,"y2":263}
+          ]},
+          {"sound":"","link":"0","x1":467,"y1":182,"x2":550,"y2":216},
+          {"sound":"","link":"3","x1":438,"y1":215,"x2":554,"y2":238},
+          {"sound":"","link":"2","x1":395,"y1":235,"x2":565,"y2":258}
+
+      ];
+
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

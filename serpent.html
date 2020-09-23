@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/brass/serp/serp000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Serpent_(musique)">Article Wikipédia</a>
+    <script>
+      prefix = "brass/serp/";
+      suffix = "";
+      sounds = [
+          {"sound":"serpword","link":"","x1":391,"y1":17,"x2":426,"y2":52},
+          {"sound":"serpsolo","link":"","x1":513,"y1":276,"x2":567,"y2":325}
+      ];
+      links = [
+          {"sound":"","link":"trompettes","x1":260,"y1":376,"x2":314,"y2":429}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":328,"y1":372,"x2":380,"y2":426, links:[
+              {"sound":"","link":"cuivres","x1":256,"y1":45,"x2":298,"y2":91},
+          ], sounds:[
+              {"sound":"serprang","link":"","x1":253,"y1":92,"x2":308,"y2":147}
+          ]},
+          {"sound":"","link":"0","x1":104,"y1":63,"x2":182,"y2":94}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>
