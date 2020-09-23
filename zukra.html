@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/woodwind/zukr/zukr000a.png"></image>
+    </div>
+    </br>
+    <a href="https://en.wikipedia.org/wiki/Zukra">Article Wikipédia</a>
+    <script>
+      prefix = "woodwind/zukr/";
+      suffix = "";
+      sounds = [
+          {"sound":"zukrword","link":"","x1":376,"y1":21,"x2":411,"y2":50},
+          {"sound":"zukrsolo","link":"","x1":233,"y1":322,"x2":278,"y2":366}
+      ];
+      links = [
+          {"sound":"","link":"cornemuses","x1":271,"y1":376,"x2":314,"y2":423}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":329,"y1":376,"x2":380,"y2":425, links:[
+              {"sound":"","link":"bois","x1":256,"y1":39,"x2":299,"y2":91},
+              {"sound":"","link":"afrique","x1":242,"y1":207,"x2":307,"y2":264}
+
+          ], sounds:[
+              {"sound":"zukrrang","link":"","x1":250,"y1":91,"x2":304,"y2":146}
+          ]}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

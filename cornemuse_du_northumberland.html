@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/woodwind/nthp/nthp000a.png"></image>
+    </div>
+    </br>
+    <a href="https://en.wikipedia.org/wiki/Duda">Article Wikipédia</a>
+    <script>
+      prefix = "woodwind/nthp/";
+      suffix = "";
+      sounds = [
+          {"sound":"nthpword","link":"","x1":579,"y1":22,"x2":613,"y2":50},
+          {"sound":"nthpsolo","link":"","x1":41,"y1":297,"x2":91,"y2":341}
+      ];
+      links = [
+          {"sound":"","link":"cornemuses","x1":271,"y1":376,"x2":314,"y2":423}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":329,"y1":376,"x2":380,"y2":425, links:[
+              {"sound":"","link":"bois","x1":256,"y1":39,"x2":299,"y2":91},
+              {"sound":"","link":"europe","x1":242,"y1":207,"x2":307,"y2":264}
+
+          ], sounds:[
+          ]},
+          {"sound":"","link":"vues","x1":487,"y1":281,"x2":598,"y2":367, links:[
+              {"sound":"","link":"@000y","x1":279,"y1":37,"x2":388,"y2":68},
+              {"sound":"","link":"@001y","x1":232,"y1":164,"x2":307,"y2":208}
+          ]},
+          {"sound":"","link":"0","x1":170,"y1":345,"x2":238,"y2":372}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/woodwind/zamp/zamp000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/zampogna">Article Wikipédia</a>
+    <script>
+      prefix = "woodwind/zamp/";
+      suffix = "";
+      sounds = [
+          {"sound":"zampword","link":"","x1":475,"y1":15,"x2":511,"y2":51},
+          {"sound":"zampsolo","link":"","x1":523,"y1":122,"x2":575,"y2":175}
+      ];
+      links = [
+          {"sound":"","link":"cornemuses","x1":310,"y1":373,"x2":366,"y2":427}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":380,"y1":369,"x2":432,"y2":427, links:[
+              {"sound":"","link":"bois","x1":256,"y1":39,"x2":299,"y2":91},
+              {"sound":"","link":"europe","x1":242,"y1":207,"x2":307,"y2":264}
+
+          ], sounds:[
+              {"sound":"zamprang","link":"","x1":255,"y1":92,"x2":308,"y2":147}
+          ]},
+          {"sound":"","link":"vues","x1":487,"y1":281,"x2":598,"y2":367, links:[
+              {"sound":"","link":"@000y","x1":279,"y1":37,"x2":388,"y2":68},
+              {"sound":"","link":"@001y","x1":232,"y1":164,"x2":307,"y2":208}
+          ]},
+          {"sound":"","link":"0","x1":170,"y1":345,"x2":238,"y2":372}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

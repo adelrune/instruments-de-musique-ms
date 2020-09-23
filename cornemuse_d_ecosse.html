@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/woodwind/bagp/bagp000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Great_Highland_bagpipe">Article Wikipédia</a>
+    <script>
+      prefix = "woodwind/bagp/";
+      suffix = "";
+      sounds = [
+          {"sound":"bagpword","link":"","x1":479,"y1":17,"x2":522,"y2":53},
+          {"sound":"bagpsolo","link":"","x1":312,"y1":278,"x2":369,"y2":330}
+      ];
+      links = [
+          {"sound":"","link":"cornemuses","x1":295,"y1":376,"x2":349,"y2":429}
+      ];
+      popups = [
+          {"sound":"","link":"vues","x1":48,"y1":283,"x2":184,"y2":365, links:[
+              {"sound":"","link":"@001y","x1":216,"y1":249,"x2":334,"y2":277, sounds:[
+                  {"sound":"bagp02fx","link":"","x1":43,"y1":265,"x2":125,"y2":293},
+                  {"sound":"bagp04fx","link":"","x1":146,"y1":263,"x2":244,"y2":295}
+              ]},
+              {"sound":"","link":"@000y","x1":329,"y1":92,"x2":443,"y2":124}
+          ]},
+          {"sound":"","link":"0","x1":400,"y1":92,"x2":517,"y2":127, sounds:[
+              {"sound":"bagp05fx","link":"","x1":38,"y1":359,"x2":194,"y2":390}
+          ]},
+          {"sound":"","link":"1","x1":378,"y1":330,"x2":432,"y2":360},
+          {"sound":"","link":"demo","x1":235,"y1":376,"x2":284,"y2":424, sounds:[
+              {"sound":"bagpsnts","link":"","x1":0,"y1":37,"x2":214,"y2":126},
+              {"sound":"bagprang","link":"","x1":218,"y1":40,"x2":267,"y2":124}
+          ], links:[
+              {"sound":"","link":"@folk","x1":277,"y1":35,"x2":424,"y2":127, sounds:[
+                  {"sound":"bagpfolk","link":"","x1":264,"y1":262,"x2":305,"y2":305}
+              ]}
+          ]},
+          {"sound":"","link":"notes","x1":363,"y1":376,"x2":415,"y2":429, links:[
+              {"sound":"","link":"bois","x1":255,"y1":41,"x2":303,"y2":89},
+              {"sound":"","link":"europe","x1":255,"y1":208,"x2":306,"y2":269}
+          ], sounds:[
+              {"sound":"bagprang","link":"","x1":250,"y1":90,"x2":306,"y2":145}
+          ]}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

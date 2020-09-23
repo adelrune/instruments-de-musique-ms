@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/brass/horn/horn000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Tuba_wagn%C3%A9rien">Article Wikipédia</a>
+    <script>
+      prefix = "brass/horn/";
+      suffix = "";
+      sounds = [
+          {"sound":"hornword","link":"","x1":329,"y1":16,"x2":384,"y2":54},
+          {"sound":"hornsolo","link":"","x1":219,"y1":233,"x2":266,"y2":273}
+      ];
+      links = [
+          {"sound":"","link":"cors","x1":114,"y1":371,"x2":166,"y2":432}
+      ];
+      popups = [
+          {"sound":"","link":"demo","x1":53,"y1":375,"x2":102,"y2":429, sounds:[
+              {"sound":"hornsnts","link":"","x1":2,"y1":34,"x2":285,"y2":119},
+              {"sound":"hornrang","link":"","x1":290,"y1":37,"x2":340,"y2":117},
+              {"sound":"horn02fx","link":"","x1":180,"y1":150,"x2":223,"y2":170},
+              {"sound":"horn07fx","link":"","x1":182,"y1":196,"x2":295,"y2":220}
+          ], links:[
+              {"sound":"","link":"@orch","x1":6,"y1":154,"x2":86,"y2":248, sounds:[
+                  {"sound":"hornorch","link":"","x1":263,"y1":232,"x2":300,"y2":271}
+              ]},
+              {"sound":"","link":"@cham","x1":93,"y1":156,"x2":172,"y2":249, sounds:[
+                  {"sound":"horncham","link":"","x1":271,"y1":232,"x2":306,"y2":274}
+              ]}
+          ]},
+          {"sound":"","link":"notes","x1":176,"y1":373,"x2":229,"y2":426, sounds:[
+              {"sound":"hornrang","link":"","x1":250,"y1":87,"x2":307,"y2":144}
+          ], links:[
+              {"sound":"","link":"cuivres","x1":257,"y1":36,"x2":303,"y2":90}
+          ]},
+          {"sound":"","link":"vues","x1":142,"y1":281,"x2":269,"y2":365},
+          {"sound":"","link":"0","x1":347,"y1":67,"x2":427,"y2":98},
+          {"sound":"","link":"3","x1":487,"y1":99,"x2":568,"y2":133},
+          {"sound":"","link":"1","x1":512,"y1":139,"x2":609,"y2":170},
+          {"sound":"","link":"4","x1":280,"y1":207,"x2":352,"y2":245, sounds:[
+              {"sound":"horn06fx","link":"","x1":262,"y1":192,"x2":365,"y2":224}
+          ]},
+          {"sound":"","link":"2","x1":467,"y1":303,"x2":587,"y2":346}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

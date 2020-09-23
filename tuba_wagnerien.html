@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/brass/wtub/wtub000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Tuba_wagn%C3%A9rien">Article Wikipédia</a>
+    <script>
+      prefix = "brass/wtub/";
+      suffix = "";
+      sounds = [
+          {"sound":"wtubword","link":"","x1":339,"y1":16,"x2":384,"y2":54},
+          {"sound":"wtubsolo","link":"","x1":327,"y1":130,"x2":388,"y2":177}
+      ];
+      links = [
+          {"sound":"","link":"cors","x1":48,"y1":378,"x2":95,"y2":423}
+      ];
+      popups = [
+          {"sound":"","link":"vues","x1":49,"y1":258,"x2":153,"y2":359},
+          {"sound":"","link":"notes","x1":110,"y1":372,"x2":173,"y2":427, sounds:[
+              {"sound":"wtubrang","link":"","x1":250,"y1":87,"x2":307,"y2":144}
+          ], links:[
+              {"sound":"","link":"cuivres","x1":257,"y1":36,"x2":303,"y2":90}
+          ]}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

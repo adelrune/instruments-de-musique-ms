@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/brass/rkan/rkan000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Kangling">Article Wikipédia</a>
+    <script>
+      prefix = "brass/rkan/";
+      suffix = "";
+      sounds = [
+          {"sound":"rkanword","link":"","x1":408,"y1":14,"x2":444,"y2":53},
+          {"sound":"rkansolo","link":"","x1":72,"y1":174,"x2":111,"y2":215}
+      ];
+      links = [
+          {"sound":"","link":"cors","x1":246,"y1":369,"x2":301,"y2":430}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":312,"y1":369,"x2":370,"y2":432, links:[
+              {"sound":"","link":"cuivres","x1":256,"y1":45,"x2":298,"y2":91},
+              {"sound":"","link":"asie_du_sud","x1":251,"y1":177,"x2":303,"y2":238}
+          ], sounds:[
+          ]},
+      {"sound":"","link":"aussi","x1":375,"y1":375,"x2":433,"y2":429, links:[
+              {"sound":"","link":"trompette","x1":2,"y1":43,"x2":107,"y2":136},
+              {"sound":"","link":"dung_chen","x1":115,"y1":45,"x2":211,"y2":137},
+          ]},
+          {"sound":"","link":"0","x1":177,"y1":77,"x2":280,"y2":117}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/strings/viol/viol000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/viole_de_gambe">Article Wikipédia</a>
+    <script>
+      prefix = "strings/viol/";
+      suffix = "";
+      sounds = [
+          {"sound":"violword","link":"","x1":463,"y1":18,"x2":498,"y2":49},
+          {"sound":"violsolo","link":"","x1":316,"y1":320,"x2":354,"y2":363}
+      ];
+      links = [
+          {"sound":"","link":"violoncelles","x1":262,"y1":379,"x2":317,"y2":425}
+              ];
+      popups = [
+          {"sound":"","link":"vues","x1":494,"y1":278,"x2":605,"y2":363},
+          {"sound":"","link":"notes","x1":331,"y1":375,"x2":378,"y2":426, links:[
+              {"sound":"","link":"cordes","x1":250,"y1":38,"x2":307,"y2":85},
+          ], sounds:[
+              {"sound":"violrang","link":"","x1":253,"y1":92,"x2":304,"y2":148}
+          ]
+          }
+      ];
+
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>
