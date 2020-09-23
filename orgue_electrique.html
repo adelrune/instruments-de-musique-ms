@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/keybords/elor/elor000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Orgue_num%C3%A9rique">Article Wikipédia</a>
+    <script>
+      prefix = "keybords/elor/";
+      suffix = "";
+      sounds = [
+          {"sound":"elorword","link":"","x1":449,"y1":15,"x2":491,"y2":50},
+          {"sound":"elorsolo","link":"","x1":210,"y1":302,"x2":252,"y2":340}
+      ];
+      links = [
+          {"sound":"","link":"orgues","x1":262,"y1":379,"x2":317,"y2":425},
+              ];
+      popups = [
+          {"sound":"","link":"notes","x1":331,"y1":375,"x2":378,"y2":426, links:[
+              {"sound":"","link":"claviers","x1":250,"y1":38,"x2":307,"y2":89},
+          ], sounds:[
+              {"sound":"elorrang","link":"","x1":251,"y1":95,"x2":308,"y2":152}
+          ]
+          },
+          {"sound":"","link":"vues","x1":51,"y1":280,"x2":168,"y2":366},
+          {"sound":"","link":"0","x1":497,"y1":236,"x2":574,"y2":277, sounds:[
+              {"sound":"elor03fx","link":"","x1":208,"y1":266,"x2":364,"y2":291}
+          ]},
+          {"sound":"","link":"1","x1":376,"y1":342,"x2":506,"y2":370, sounds:[
+              {"sound":"elor02fx","link":"","x1":65,"y1":332,"x2":191,"y2":356}
+          ]},
+
+
+      ];
+
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

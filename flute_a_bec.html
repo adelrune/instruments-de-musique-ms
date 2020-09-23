@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/woodwind/recr/recr000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/flute_a_bec">Article Wikipédia</a>
+    <script>
+      prefix = "woodwind/recr/";
+      suffix = "";
+      sounds = [
+          {"sound":"recrword","link":"","x1":395,"y1":15,"x2":442,"y2":53},
+          {"sound":"recrsolo","link":"","x1":46,"y1":146,"x2":90,"y2":188}
+      ];
+      links = [
+          {"sound":"","link":"flutes_a_bec","x1":294,"y1":376,"x2":347,"y2":427}
+
+              ];
+      popups = [
+          {"sound":"","link":"vues","x1":452,"y1":85,"x2":568,"y2":177},
+          {"sound":"","link":"notes","x1":360,"y1":373,"x2":411,"y2":426,links:[
+              {"sound":"","link":"bois","x1":258,"y1":39,"x2":300,"y2":89}
+          ], sounds:[
+              {"sound":"recrrang","link":"","x1":242,"y1":90,"x2":307,"y2":150}
+          ]
+          },
+          {"sound":"","link":"demo","x1":232,"y1":375,"x2":285,"y2":426, sounds:[
+              {"sound":"recrsnts","link":"","x1":7,"y1":39,"x2":287,"y2":117},
+              {"sound":"recrrang","link":"","x1":294,"y1":47,"x2":340,"y2":116},
+              {"sound":"recr01fx","link":"","x1":177,"y1":148,"x2":311,"y2":170},
+              {"sound":"recr05fx","link":"","x1":174,"y1":214,"x2":287,"y2":241}
+          ], links:[
+              {"sound":"","link":"@orch","x1":4,"y1":154,"x2":86,"y2":251, sounds:[
+                  {"sound":"recrorch","link":"","x1":258,"y1":224,"x2":304,"y2":278}
+              ]},
+              {"sound":"","link":"@cham","x1":92,"y1":154,"x2":172,"y2":249, sounds:[
+                  {"sound":"recrcham","link":"","x1":263,"y1":233,"x2":301,"y2":272}
+              ]}
+          ]},
+          {"sound":"","link":"0","x1":164,"y1":77,"x2":225,"y2":112, sounds:[
+              {"sound":"recr03fx","link":"","x1":30,"y1":248,"x2":111,"y2":285},
+              {"sound":"recr04fx","link":"","x1":155,"y1":251,"x2":274,"y2":284}
+          ]},
+          {"sound":"","link":"1","x1":272,"y1":142,"x2":339,"y2":181}
+
+      ]
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

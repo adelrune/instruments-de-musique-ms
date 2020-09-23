@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/keybords/harm/harm000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Harmonium">Article Wikipédia</a>
+    <script>
+      prefix = "keybords/harm/";
+      suffix = "";
+      sounds = [
+          {"sound":"harmword","link":"","x1":400,"y1":6,"x2":469,"y2":57},
+          {"sound":"harmsolo","link":"","x1":381,"y1":328,"x2":440,"y2":373}
+      ];
+      links = [
+          {"sound":"","link":"orgues","x1":262,"y1":379,"x2":317,"y2":425},
+              ];
+      popups = [
+          {"sound":"","link":"notes","x1":331,"y1":375,"x2":378,"y2":426, links:[
+              {"sound":"","link":"claviers","x1":250,"y1":38,"x2":307,"y2":89},
+          ], sounds:[
+          ]
+          },
+          {"sound":"","link":"0","x1":165,"y1":66,"x2":225,"y2":90},
+          {"sound":"","link":"1","x1":284,"y1":322,"x2":349,"y2":354}
+
+      ];
+
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

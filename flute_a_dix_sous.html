@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/woodwind/tinw/tinw000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Tin_whistle">Article Wikipédia</a>
+    <script>
+      prefix = "woodwind/tinw/";
+      suffix = "";
+      sounds = [
+          {"sound":"tinwword","link":"","x1":489,"y1":19,"x2":535,"y2":52},
+          {"sound":"tinwsolo","link":"","x1":78,"y1":175,"x2":114,"y2":218}
+      ];
+      links = [
+{"sound":"","link":"flutes_a_bec","x1":262.5,"y1":376,"x2":310.5,"y2":427},
+
+
+              ];
+      popups = [
+          {"sound":"","link":"notes","x1":328.5,"y1":377,"x2":377.5,"y2":424, links:[
+              {"sound":"","link":"bois","x1":249,"y1":38,"x2":303,"y2":86},
+              {"sound":"","link":"europe","x1":247,"y1":189,"x2":303,"y2":257}
+          ],
+          }
+      ]
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>
