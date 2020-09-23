@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/woodwind/ocar/ocar000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/ocarina">Article Wikipédia</a>
+    <script>
+      prefix = "woodwind/ocar/";
+      suffix = "";
+      sounds = [
+          {"sound":"ocarword","link":"","x1":393,"y1":17,"x2":431,"y2":54},
+          {"sound":"ocarsolo","link":"","x1":211,"y1":319,"x2":256,"y2":361}
+      ];
+      links = [
+          {"sound":"","link":"flutes","x1":262,"y1":371,"x2":316,"y2":426}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":331,"y1":375,"x2":376,"y2":427, sounds:[
+          ], links:[
+              {"sound":"","link":"bois","x1":256,"y1":41,"x2":300,"y2":92},
+              {"sound":"","link":"oceanie","x1":245,"y1":177,"x2":309,"y2":243}
+          ]},
+
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

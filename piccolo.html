@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/woodwind/picc/picc000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Piccolo_(instrument)">Article Wikipédia</a>
+    <script>
+      prefix = "woodwind/picc/";
+      suffix = "";
+      sounds = [
+          {"sound":"piccsolo","link":"","x1":94,"y1":235,"x2":143,"y2":293},
+          {"sound":"piccword","link":"","x1":387,"y1":13,"x2":427,"y2":55}
+      ];
+      links = [
+          {"sound":"","link":"flutes","x1":262,"y1":371,"x2":316,"y2":426}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":331,"y1":375,"x2":376,"y2":427, sounds:[
+              {"sound":"piccrang","link":"","x1":252,"y1":91,"x2":306,"y2":149}
+          ], links:[
+              {"sound":"","link":"bois","x1":256,"y1":41,"x2":300,"y2":92},
+          ]},
+          {"sound":"","link":"vues","x1":488,"y1":280,"x2":594,"y2":364}
+
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

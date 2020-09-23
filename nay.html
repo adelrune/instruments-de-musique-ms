@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/woodwind/nayy/nayy000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Ney_(instrument)">Article Wikipédia</a>
+    <script>
+      prefix = "woodwind/nayy/";
+      suffix = "";
+      sounds = [
+          {"sound":"nayyword","link":"","x1":361,"y1":19,"x2":391,"y2":51},
+          {"sound":"nayysolo","link":"","x1":51,"y1":140,"x2":99,"y2":186}
+      ];
+      links = [
+          {"sound":"","link":"flutes","x1":262,"y1":371,"x2":316,"y2":426}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":331,"y1":375,"x2":376,"y2":427, sounds:[
+              {"sound":"nayyrang","link":"","x1":252,"y1":91,"x2":306,"y2":149}
+          ], links:[
+              {"sound":"","link":"bois","x1":256,"y1":41,"x2":300,"y2":92},
+              {"sound":"","link":"moyen_orient","x1":245,"y1":177,"x2":309,"y2":243}
+          ]},
+          {"sound":"","link":"vues","x1":488,"y1":280,"x2":594,"y2":364}
+
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

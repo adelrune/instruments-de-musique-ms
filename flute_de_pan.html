@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/woodwind/panp/panp000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/flute_de_pan">Article Wikipédia</a>
+    <script>
+      prefix = "woodwind/panp/";
+      suffix = "";
+      sounds = [
+          {"sound":"panpword","link":"","x1":403,"y1":17,"x2":441,"y2":54},
+          {"sound":"panpsolo","link":"","x1":58,"y1":201,"x2":101,"y2":252}
+      ];
+      links = [
+          {"sound":"","link":"flutes","x1":262,"y1":371,"x2":316,"y2":426}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":331,"y1":375,"x2":376,"y2":427, sounds:[
+          ], links:[
+              {"sound":"","link":"bois","x1":256,"y1":41,"x2":300,"y2":92},
+              {"sound":"","link":"amerique_latine","x1":241,"y1":197,"x2":308,"y2":264}
+          ]},
+
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>
