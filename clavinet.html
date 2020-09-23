@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/keybords/clat/clat000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Clavinet">Article Wikipédia</a>
+    <script>
+      prefix = "keybords/clat/";
+      suffix = "";
+      sounds = [
+          {"sound":"clatword","link":"","x1":382,"y1":12,"x2":418,"y2":49},
+          {"sound":"clatsolo","link":"","x1":406,"y1":176,"x2":442,"y2":225}
+      ];
+      links = [
+          {"sound":"","link":"clavecins","x1":232,"y1":371,"x2":282,"y2":429}
+              ];
+      popups = [
+          {"sound":"","link":"notes","x1":291,"y1":375,"x2":344,"y2":426, links:[
+              {"sound":"","link":"claviers","x1":250,"y1":38,"x2":307,"y2":89},
+          ], sounds:[
+              {"sound":"clatrang","link":"","x1":251,"y1":95,"x2":308,"y2":152}
+          ]
+          },
+          {"sound":"","link":"0","x1":533,"y1":97,"x2":601,"y2":145, sounds:[
+              {"sound":"clat03fx","link":"","x1":94,"y1":291,"x2":236,"y2":320}
+          ]},
+          {"sound":"","link":"aussi","x1":357,"y1":371,"x2":420,"y2":427, links:[
+              {"sound":"","link":"piano_electrique","x1":6,"y1":45,"x2":103,"y2":135},
+              {"sound":"","link":"orgue_electrique","x1":110,"y1":42,"x2":208,"y2":135}
+          ]}
+
+      ];
+
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

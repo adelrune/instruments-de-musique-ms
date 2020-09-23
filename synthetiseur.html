@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/keybords/synz/synz000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Synth%C3%A9tiseur">Article Wikipédia</a>
+    <script>
+      prefix = "keybords/synz/";
+      suffix = "";
+      sounds = [
+          {"sound":"synzword","link":"","x1":439,"y1":14,"x2":478,"y2":48},
+          {"sound":"synzsolo","link":"","x1":93,"y1":254,"x2":145,"y2":304}
+      ];
+      links = [
+          {"sound":"","link":"synthetiseurs","x1":302,"y1":374,"x2":345,"y2":431}
+              ];
+      popups = [
+          {"sound":"","link":"notes","x1":368,"y1":375,"x2":418,"y2":426, links:[
+              {"sound":"","link":"claviers","x1":250,"y1":38,"x2":307,"y2":89},
+          ], sounds:[
+              {"sound":"synzrang","link":"","x1":251,"y1":95,"x2":308,"y2":152}
+          ]
+          },
+          {"sound":"","link":"0","x1":69,"y1":88,"x2":181,"y2":133, sounds:[
+              {"sound":"synz01fx","link":"","x1":129,"y1":191,"x2":333,"y2":220}
+          ]},
+          {"sound":"","link":"demo","x1":234,"y1":376,"x2":283,"y2":432, sounds:[
+              {"sound":"synzsnts","link":"","x1":6,"y1":38,"x2":287,"y2":117},
+              {"sound":"synzrang","link":"","x1":290,"y1":40,"x2":342,"y2":119}
+          ],
+           links:[
+               {"sound":"","link":"@pop","x1":5,"y1":149,"x2":171,"y2":248, sounds:[
+                   {"sound":"synzpop","link":"","x1":256,"y1":254,"x2":298,"y2":299}
+               ]},
+               {"sound":"","link":"@rock","x1":182,"y1":154,"x2":339,"y2":248, sounds:[
+                   {"sound":"synzrock","link":"","x1":261,"y1":242,"x2":303,"y2":287}
+               ]}
+           ]
+          },
+          {"sound":"","link":"4","x1":37,"y1":213,"x2":135,"y2":251, sounds:[
+              {"sound":"synz03fx","link":"","x1":243,"y1":191,"x2":347,"y2":225},
+              {"sound":"synz04fx","link":"","x1":346,"y1":195,"x2":441,"y2":224}
+          ]},
+          {"sound":"","link":"2","x1":218,"y1":62,"x2":292,"y2":92, sounds:[
+              {"sound":"synz02fx","link":"","x1":42,"y1":294,"x2":262,"y2":319}
+          ]},
+          {"sound":"","link":"0","x1":378,"y1":55,"x2":418,"y2":95, sounds:[
+              {"sound":"synz01fx","link":"","x1":105,"y1":252,"x2":201,"y2":285}
+          ]},
+          {"sound":"","link":"1","x1":507,"y1":124,"x2":613,"y2":162},
+          {"sound":"","link":"3","x1":516,"y1":177,"x2":606,"y2":216}
+
+      ];
+
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

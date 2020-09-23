@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/keybords/ekey/ekey000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Synth%C3%A9tiseur">Article Wikipédia</a>
+    <script>
+      prefix = "keybords/ekey/";
+      suffix = "";
+      sounds = [
+          {"sound":"ekeysolo","link":"","x1":172,"y1":321,"x2":220,"y2":369},
+          {"sound":"ekeyword","link":"","x1":492,"y1":18,"x2":520,"y2":51}
+      ];
+      links = [
+          {"sound":"","link":"synthetiseurs","x1":267,"y1":372,"x2":318,"y2":430}
+              ];
+      popups = [
+          {"sound":"","link":"notes","x1":332,"y1":375,"x2":382,"y2":426, links:[
+              {"sound":"","link":"claviers","x1":250,"y1":38,"x2":307,"y2":89},
+          ], sounds:[
+              {"sound":"ekeyrang","link":"","x1":251,"y1":95,"x2":308,"y2":152}
+          ]
+          },
+          {"sound":"","link":"0","x1":69,"y1":88,"x2":181,"y2":133, sounds:[
+              {"sound":"ekey01fx","link":"","x1":129,"y1":191,"x2":333,"y2":220}
+          ]}
+
+      ];
+
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

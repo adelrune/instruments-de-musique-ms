@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/keybords/digs/digs000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/%C3%89chantillonneur">Article Wikipédia</a>
+    <script>
+      prefix = "keybords/digs/";
+      suffix = "";
+      sounds = [
+          {"sound":"digssolo","link":"","x1":44,"y1":197,"x2":91,"y2":240},
+          {"sound":"digsword","link":"","x1":557,"y1":19,"x2":595,"y2":53}
+      ];
+      links = [
+          {"sound":"","link":"synthetiseurs","x1":264,"y1":377,"x2":315,"y2":428}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":332,"y1":375,"x2":382,"y2":426, links:[
+              {"sound":"","link":"claviers","x1":250,"y1":38,"x2":307,"y2":89},
+          ], sounds:[
+              {"sound":"digsrang","link":"","x1":251,"y1":95,"x2":308,"y2":152}
+          ]},
+          {"sound":"","link":"vues","x1":410,"y1":250,"x2":601,"y2":363}
+      ];
+
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

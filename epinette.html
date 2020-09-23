@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/keybords/spin/spin000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/%C3%89pinette_(instrument_de_musique)">Article Wikipédia</a>
+    <script>
+      prefix = "keybords/spin/";
+      suffix = "";
+      sounds = [
+          {"sound":"spinword","link":"","x1":398,"y1":17,"x2":434,"y2":53},
+          {"sound":"spinsolo","link":"","x1":227,"y1":281,"x2":269,"y2":325}
+      ];
+      links = [
+          {"sound":"","link":"clavecins","x1":262,"y1":379,"x2":317,"y2":425},
+              ];
+      popups = [
+          {"sound":"","link":"notes","x1":331,"y1":375,"x2":378,"y2":426, links:[
+              {"sound":"","link":"claviers","x1":250,"y1":38,"x2":307,"y2":89},
+          ], sounds:[
+              {"sound":"spinrang","link":"","x1":251,"y1":95,"x2":308,"y2":152}
+          ]
+          },
+          {"sound":"","link":"vues","x1":77,"y1":281,"x2":215,"y2":363},
+          {"sound":"","link":"0","x1":344,"y1":85,"x2":411,"y2":122}
+
+      ];
+
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>
