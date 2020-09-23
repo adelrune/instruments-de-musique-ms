@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/percussn/zill/zill000a.png"></image>
+    </div>
+    </br>
+    <script>
+      prefix = "percussn/zill/";
+      suffix = "";
+      sounds = [
+          {"sound":"zillword","link":"","x1":412,"y1":14,"x2":452,"y2":52},
+          {"sound":"zillsolo","link":"","x1":262,"y1":139,"x2":319,"y2":186}
+      ];
+      links = [
+          {"sound":"","link":"cymbales","x1":263,"y1":370,"x2":312,"y2":439}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":333,"y1":373,"x2":384,"y2":434, links:[
+              {"sound":"","link":"percussions","x1":248,"y1":38,"x2":301,"y2":89},
+              {"sound":"","link":"moyen_orient","x1":242,"y1":150,"x2":310,"y2":215}
+          ], sounds:[
+          ]},
+      ]
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

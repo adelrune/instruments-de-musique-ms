@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/percussn/cymb/cymb000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Cymbale">Article Wikipédia</a>
+    <script>
+      prefix = "percussn/cymb/";
+      suffix = "";
+      sounds = [
+          {"sound":"cymbword","link":"","x1":411,"y1":21,"x2":456,"y2":53},
+          {"sound":"cymbsolo","link":"","x1":473,"y1":304,"x2":516,"y2":344},
+          {"sound":"cymb1hit","link":"","x1":70,"y1":71,"x2":360,"y2":353}
+      ];
+      links = [
+          {"sound":"","link":"cymbales","x1":229,"y1":373,"x2":280,"y2":425}
+              ];
+      popups = [
+          {"sound":"","link":"notes","x1":294,"y1":371,"x2":346,"y2":428, links:[
+              {"sound":"","link":"percussions","x1":248,"y1":38,"x2":301,"y2":89},
+
+          ], sounds:[
+          ]},
+          {"sound":"","link":"aussi","x1":357,"y1":374,"x2":416,"y2":425, links:[
+              {"sound":"","link":"batterie","x1":7,"y1":38,"x2":104,"y2":135},
+              {"sound":"","link":"tam_tam","x1":112,"y1":35,"x2":200,"y2":135}
+          ]},
+      ]
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

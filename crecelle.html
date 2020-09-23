@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/percussn/cogr/cogr000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/crecelle">Article Wikipédia</a>
+    <script>
+      prefix = "percussn/cogr/";
+      suffix = "";
+      sounds = [
+          {"sound":"cogrsolo","link":"","x1":37,"y1":213,"x2":93,"y2":272},
+          {"sound":"cogrword","link":"","x1":396,"y1":14,"x2":428,"y2":53}
+
+      ];
+      links = [
+          {"sound":"","link":"grattoirs","x1":271,"y1":376,"x2":314,"y2":423}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":329,"y1":376,"x2":380,"y2":425, links:[
+              {"sound":"","link":"percussions","x1":256,"y1":39,"x2":299,"y2":91},
+
+          ], sounds:[
+          ]}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

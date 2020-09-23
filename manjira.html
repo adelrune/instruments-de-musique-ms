@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/percussn/manj/manj000a.png"></image>
+    </div>
+    </br>
+    <a href="https://en.wikipedia.org/wiki/Taal_(instrument)">Article Wikipédia</a>
+    <script>
+      prefix = "percussn/manj/";
+      suffix = "";
+      sounds = [
+          {"sound":"manjword","link":"","x1":447,"y1":17,"x2":482,"y2":50},
+          {"sound":"manjsolo","link":"","x1":523,"y1":318,"x2":570,"y2":369},
+          {"sound":"manj1hit","link":"","x1":80,"y1":277,"x2":338,"y2":373}
+      ];
+      links = [
+          {"sound":"","link":"cymbales","x1":288,"y1":377,"x2":347,"y2":435}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":357,"y1":362,"x2":409,"y2":431, links:[
+              {"sound":"","link":"percussions","x1":248,"y1":38,"x2":301,"y2":89},
+              {"sound":"","link":"asie_du_sud","x1":242,"y1":150,"x2":310,"y2":215}
+          ], sounds:[
+          ]},
+      ]
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>
