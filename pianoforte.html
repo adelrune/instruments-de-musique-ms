@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/keybords/fopi/fopi000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Piano-forte">Article Wikipédia</a>
+    <script>
+      prefix = "keybords/fopi/";
+      suffix = "";
+      sounds = [
+          {"sound":"fopiword","link":"","x1":428,"y1":15,"x2":462,"y2":53},
+          {"sound":"fopisolo","link":"","x1":75,"y1":320,"x2":123,"y2":366}
+      ];
+      links = [
+          {"sound":"","link":"pianos","x1":233,"y1":372,"x2":285,"y2":429}
+      ];
+      popups = [
+
+          {"sound":"","link":"notes","x1":300,"y1":376,"x2":347,"y2":429, sounds:[
+              {"sound":"fopirang","link":"","x1":256,"y1":92,"x2":307,"y2":149}
+          ], links:[
+              {"sound":"","link":"claviers","x1":252,"y1":42,"x2":305,"y2":90}
+          ]},
+          {"sound":"","link":"aussi","x1":355,"y1":376,"x2":421,"y2":426, links:[
+              {"sound":"","link":"clavecin","x1":4,"y1":40,"x2":102,"y2":131},
+              {"sound":"","link":"clavicorde","x1":112,"y1":46,"x2":210,"y2":134}
+          ]},
+          {"sound":"","link":"0","x1":95,"y1":69,"x2":210,"y2":93},
+          {"sound":"","link":"vues","x1":476,"y1":270,"x2":594,"y2":367, links:[
+              {"sound":"","link":"@000y","x1":413,"y1":63,"x2":481,"y2":91}
+          ]}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

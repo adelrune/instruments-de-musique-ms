@@ -1,0 +1,75 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/keybords/grpi/grpi000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/piano_a_queue">Article Wikipédia</a>
+    <script>
+      prefix = "keybords/grpi/";
+      suffix = "";
+      sounds = [
+          {"sound":"grpisolo","link":"","x1":191,"y1":314,"x2":236,"y2":365},
+          {"sound":"grpiword","link":"","x1":446,"y1":18,"x2":487,"y2":52}
+      ];
+      links = [
+          {"sound":"","link":"pianos","x1":294,"y1":376,"x2":347,"y2":427}
+
+              ];
+      popups = [
+          {"sound":"","link":"notes","x1":360,"y1":373,"x2":411,"y2":426,links:[
+              {"sound":"","link":"claviers","x1":258,"y1":39,"x2":300,"y2":89}
+          ], sounds:[
+              {"sound":"grpirang","link":"","x1":242,"y1":90,"x2":307,"y2":150}
+          ]
+          },
+          {"sound":"","link":"demo","x1":232,"y1":375,"x2":285,"y2":426, sounds:[
+              {"sound":"grpisnts","link":"","x1":7,"y1":39,"x2":287,"y2":117},
+              {"sound":"grpirang","link":"","x1":294,"y1":47,"x2":340,"y2":116},
+              {"sound":"grpi09fx","link":"","x1":179,"y1":146,"x2":265,"y2":166},
+              {"sound":"grpi04fx","link":"","x1":181,"y1":206,"x2":277,"y2":221},
+              {"sound":"grpi03fx","link":"","x1":181,"y1":248,"x2":266,"y2":267},
+              {"sound":"grpi05fx","link":"","x1":184,"y1":287,"x2":307,"y2":309}
+          ], links:[
+              {"sound":"","link":"@orch","x1":4,"y1":148,"x2":86,"y2":250, sounds:[
+                  {"sound":"grpiorch","link":"","x1":258,"y1":224,"x2":304,"y2":278}
+              ]},
+              {"sound":"","link":"@cham","x1":89,"y1":150,"x2":174,"y2":251, sounds:[
+                  {"sound":"grpicham","link":"","x1":258,"y1":232,"x2":301,"y2":271}
+              ]},
+              {"sound":"","link":"@jazz","x1":5,"y1":254,"x2":84,"y2":347, sounds:[
+                  {"sound":"grpijazz","link":"","x1":263,"y1":260,"x2":303,"y2":303}
+              ]},
+              {"sound":"","link":"@blue","x1":89,"y1":252,"x2":173,"y2":346, sounds:[
+                  {"sound":"grpiblue","link":"","x1":257,"y1":236,"x2":298,"y2":274}
+              ]}
+          ]},
+          {"sound":"","link":"vues","x1":44,"y1":286,"x2":167,"y2":369, links:[
+              {"sound":"","link":"@000y","x1":244,"y1":157,"x2":324,"y2":193},
+              {"sound":"","link":"@001y","x1":484,"y1":96,"x2":546,"y2":129}
+          ]},
+          {"sound":"","link":"0","x1":518,"y1":61,"x2":596,"y2":101},
+          {"sound":"","link":"2","x1":478,"y1":228,"x2":562,"y2":275},
+          {"sound":"","link":"1","x1":286,"y1":322,"x2":352,"y2":369, sounds:[
+              {"sound":"grpi02fx","link":"","x1":18,"y1":229,"x2":149,"y2":260},
+              {"sound":"grpi01fx","link":"","x1":152,"y1":229,"x2":278,"y2":256},
+              {"sound":"grpi07fx","link":"","x1":22,"y1":321,"x2":144,"y2":345},
+              {"sound":"grpi06fx","link":"","x1":153,"y1":323,"x2":277,"y2":346}
+          ]}
+
+      ]
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

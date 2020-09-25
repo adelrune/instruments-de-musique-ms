@@ -5,7 +5,7 @@ if (typeof popups === 'undefined'){
 }
 
 
-image.addEventListener("mousemove", function(e) {
+function refresh_pointer(e) {
     var image_rect = image.getBoundingClientRect();
     var rects = links.concat(sounds).concat(popups);
     hovering = false;
@@ -25,7 +25,9 @@ image.addEventListener("mousemove", function(e) {
     } else {
         image.style.cursor='auto';
     }
-});
+}
+
+image.addEventListener("mousemove", refresh_pointer);
 
 var dimmer = null;
 

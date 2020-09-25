@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/brass/sack/sack000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Sacqueboute">Article Wikipédia</a>
+    <script>
+      prefix = "brass/sack/";
+      suffix = "";
+      sounds = [
+          {"sound":"sackword","link":"","x1":415,"y1":17,"x2":443,"y2":51},
+          {"sound":"sacksolo","link":"","x1":93,"y1":216,"x2":156,"y2":280}
+      ];
+      links = [
+          {"sound":"","link":"trombones","x1":229,"y1":371,"x2":282,"y2":427}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":296,"y1":374,"x2":349,"y2":429, links:[
+              {"sound":"","link":"cuivres","x1":256,"y1":45,"x2":298,"y2":91},
+          ], sounds:[
+
+          ]},
+          {"sound":"","link":"aussi","x1":360,"y1":375,"x2":420,"y2":428, links:[
+              {"sound":"","link":"hautbois_ancien","x1":3,"y1":43,"x2":105,"y2":138},
+              {"sound":"","link":"cornet_a_bouquin","x1":111,"y1":45,"x2":210,"y2":134}
+          ]}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

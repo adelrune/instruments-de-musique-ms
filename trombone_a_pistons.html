@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/brass/vtbn/vtbn000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Trombone_(instrument)#Le_trombone_%C3%A0_pistons">Article Wikipédia</a>
+    <script>
+      prefix = "brass/vtbn/";
+      suffix = "";
+      sounds = [
+          {"sound":"vtbnword","link":"","x1":497,"y1":18,"x2":539,"y2":52},
+          {"sound":"vtbnsolo","link":"","x1":92,"y1":237,"x2":148,"y2":286}
+      ];
+      links = [
+          {"sound":"","link":"trombones","x1":260,"y1":376,"x2":314,"y2":429}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":328,"y1":372,"x2":380,"y2":426, links:[
+              {"sound":"","link":"cuivres","x1":256,"y1":45,"x2":298,"y2":91},
+          ], sounds:[
+              {"sound":"vtbnrang","link":"","x1":254,"y1":90,"x2":303,"y2":149}
+          ]},
+          {"sound":"","link":"vues","x1":491,"y1":255,"x2":622,"y2":341}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

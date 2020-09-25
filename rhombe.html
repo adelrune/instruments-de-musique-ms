@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/woodwind/bull/bull000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/Rhombe_(instrument)">Article Wikipédia</a>
+    <script>
+      prefix = "woodwind/bull/";
+      suffix = "";
+      sounds = [
+          {"sound":"bullword","link":"","x1":379,"y1":14,"x2":421,"y2":51},
+          {"sound":"bullsolo","link":"","x1":159,"y1":321,"x2":213,"y2":363}
+      ];
+      links = [
+      ];
+      popups = [
+          {"sound":"","link":"aussi","x1":328,"y1":372,"x2":380,"y2":426, links:[
+              {"sound":"","link":"didgeridoo","x1":5,"y1":44,"x2":106,"y2":135},
+              {"sound":"","link":"harmonica","x1":108,"y1":38,"x2":211,"y2":135}
+          ]},
+          {"sound":"","link":"notes","x1":260,"y1":376,"x2":314,"y2":429, links:[
+              {"sound":"","link":"oceanie","x1":247,"y1":153,"x2":310,"y2":216}
+          ]}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>

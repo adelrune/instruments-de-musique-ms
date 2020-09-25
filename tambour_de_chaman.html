@@ -1,0 +1,40 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Les instruments de musique</title>
+    <link rel="stylesheet" href="assets/styles.css">
+
+  </head>
+
+  <body>
+    <div id="container">
+      <image id="img" src="assets/percussn/shad/shad000a.png"></image>
+    </div>
+    </br>
+    <a href="https://fr.wikipedia.org/wiki/tambour_autochtone">Article Wikipédia</a>
+    <script>
+      prefix = "percussn/shad/";
+      suffix = "";
+      sounds = [
+          {"sound":"shadword","link":"","x1":483.5,"y1":17,"x2":524.5,"y2":51},
+          {"sound":"shadsolo","link":"","x1":50.5,"y1":189,"x2":90.5,"y2":239},
+          {"sound":"shad1hit","link":"","x1":76.5,"y1":65,"x2":362.5,"y2":292}
+      ];
+      links = [
+          {"sound":"","link":"tambours_sur_cadre","x1":264,"y1":374,"x2":317,"y2":428}
+      ];
+      popups = [
+          {"sound":"","link":"notes","x1":331,"y1":380,"x2":382,"y2":427, links:[
+              {"sound":"","link":"percussions","x1":249,"y1":40,"x2":305,"y2":97},
+              {"sound":"","link":"asie_centrale_et_orientale","x1":243,"y1":142,"x2":304,"y2":204}
+          ]},
+          {"sound":"","link":"vues","x1":487.5,"y1":289,"x2":623.5,"y2":367}
+      ];
+    </script>
+    <script src="scripts/tell_me_the_coord.js"></script>
+    <script src="scripts/position_audio.js"></script>
+  </body>
+</html>
