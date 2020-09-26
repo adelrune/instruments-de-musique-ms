@@ -17,6 +17,10 @@ function showOverlay(link) {
     setTimeout(function(){dimmer.classList.add("dark");}, 20);
     dimmer.style.width = window.innerWidth +"px";
     dimmer.style.height = window.innerHeight+"px";
+    window.addEventListener("resize", function(){
+        dimmer.style.width = window.innerWidth +"px";
+        dimmer.style.height = window.innerHeight+"px";
+    });
     dimmer.onclick = function() {
         ifs = document.querySelectorAll("iframe");
         for (var i = 0; i < ifs.length; i++) {
@@ -51,7 +55,9 @@ function showOverlay(link) {
             that.style.display = "inline-block";
         }
         refresh_style();
-
+        window.addEventListener("resize", function(){
+            refresh_style();
+        });
     };
     iframe.src = link;
     document.getElementById("container").appendChild(iframe);
@@ -155,8 +161,8 @@ if (!image.complete) {
     position_divs();
 }
 
-window.onresize = function(){
+window.addEventListener("resize", function(){
     all_the_divs.forEach(function(it){
         it.restyle();
     });
-};
+});
