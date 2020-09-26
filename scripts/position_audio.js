@@ -166,3 +166,23 @@ window.addEventListener("resize", function(){
         it.restyle();
     });
 });
+
+function add_links() {
+    if (window != window.top) {
+        return;
+    }
+    var precedent = document.createElement("a");
+    precedent.href = "javascript:window.history.back();";
+    precedent.textContent = "↩ Page précédente";
+    document.body.appendChild(document.createElement("br"));
+    document.body.appendChild(precedent);
+
+    if (!location.pathname.includes("sommaire")) {
+        var sommaire = document.createElement("a");
+        sommaire.href = "sommaire.html";
+        sommaire.textContent = "Sommaire";
+        document.body.appendChild(document.createElement("br"));
+        document.body.appendChild(sommaire);
+    }
+}
+add_links();
