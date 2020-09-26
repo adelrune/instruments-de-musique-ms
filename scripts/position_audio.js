@@ -4,54 +4,11 @@ if (typeof popups === 'undefined'){
     popups = [];
 }
 
-
-function refresh_pointer(e) {
-    var image_rect = image.getBoundingClientRect();
-    var rects = links.concat(sounds).concat(popups);
-    hovering = false;
-
-    var x = e.clientX - image_rect.x;
-    var y = e.clientY - image_rect.y;
-
-    for (var i = 0; i < rects.length; i++) {
-        if (x >= rects[i].x1 && x <= rects[i].x2 && y >= rects[i].y1 && y <= rects[i].y2 ) {
-            hovering = true;
-            break;
-        }
-    }
-    if (hovering) {
-        image.style.cursor='pointer';
-
-    } else {
-        image.style.cursor='auto';
-    }
-}
-
-image.addEventListener("mousemove", refresh_pointer);
-
 var dimmer = null;
 
-function showOverlay(link, links, sounds) {
-    links = links === undefined ? null: links;
-    sounds = sounds === undefined ? null: sounds;
-    var link_splitted = link.split(".");
-    var instrument_name = prefix.split("/").slice(0,-1).pop();
-    if (link == "notes") {
-        link = "000f" + ".png";
-    } else if (link == "vues") {
-        link = "000v" + ".png";
-    } else if (link == "demo") {
-        link = "000b" + ".png";
-    } else if (link == "aussi") {
-        link = "000s" + ".png";
-    } else {
-        link = "00" + link + "z.png";
-    }
+var params = new URLSearchParams(window.location.search);
 
-
-    link = "generic_image_link.html?img=" + prefix + instrument_name + link + "&prefix=" + prefix + "&links=" + JSON.stringify(links) + "&sounds=" + JSON.stringify(sounds);
-
-    link_prefix = location.protocol;
+function showOverlay(link) {
     var docrect = document.body.getBoundingClientRect();
     var iframe = document.createElement("iframe");
     dimmer = document.createElement("div");
@@ -74,11 +31,16 @@ function showOverlay(link, links, sounds) {
     iframe.allowSameO3rigin = 1;
     iframe.style.position= "absolute";
     iframe.style.display = "none";
-    var image_rect = image.getBoundingClientRect();
-
     iframe.onload = function(){
         var that = this;
         function refresh_style() {
+            var image_rect = image.getBoundingClientRect();
+            iframe.style.border="none";
+            iframe.style.zIndex=3;
+            iframe.scrolling="no";
+            iframe.allowSameO3rigin = 1;
+            iframe.style.position= "absolute";
+            iframe.style.display = "none";
             var w = (that.contentWindow.document.getElementById("img").naturalWidth+20);
             var h = (that.contentWindow.document.getElementById("img").naturalHeight+20);
             that.style.height= h + 'px';
@@ -89,48 +51,112 @@ function showOverlay(link, links, sounds) {
             that.style.display = "inline-block";
         }
         refresh_style();
-        // setInterval(refresh_style ,100);
 
     };
     iframe.src = link;
     document.getElementById("container").appendChild(iframe);
 }
 
-image.addEventListener("click", function(e) {
-    var image_rect = image.getBoundingClientRect();
-    var x = e.clientX - image_rect.x;
-    var y = e.clientY - image_rect.y;
+var regions = ["afrique", "amerique_du_nord", "oceanie", "amerique_latine", "europe", "asie_du_sud", "moyen_orient", "asie_du_sud_est", "asie_centrale_et_orientale"];
+if (regions.includes(params.get("region"))){
+    showOverlay(params.get("region")+".html");
+}
+
+var all_the_divs = [];
+
+function position_divs() {
+    function give_me_a_div(rect_and_properties) {
+        var div = document.createElement("div");
+        div.rect_and_properties = rect_and_properties;
+        div.restyle = function() {
+            var image_rect = image.getBoundingClientRect();
+            div.style = {};
+            div.style.cursor='pointer';
+            div.style.display = "block";
+            div.style.position = "absolute";
+            div.style.width = rect_and_properties.x2 - rect_and_properties.x1 + "px";
+            div.style.height = rect_and_properties.y2 - rect_and_properties.y1 + "px";
+            div.style.left = image_rect.x + rect_and_properties.x1 + "px";
+            div.style.top = image_rect.y + rect_and_properties.y1 + "px";
+
+        };
+        document.body.appendChild(div);
+        div.restyle();
+        all_the_divs.push(div);
+        return div;
+    }
 
     for (var i = 0; i < links.length; i++) {
-        if (x >= links[i].x1 && x <= links[i].x2 && y >= links[i].y1 && y <= links[i].y2 ) {
-            if (links[i].link[0] == "@") {
+        let div = give_me_a_div(links[i]);
+        div.onclick = function() {
+            if (this.rect_and_properties.link[0] == "@") {
                 // @ is a magic char that tells this thing to replace the current iframe with the link
                 var instrument_name = prefix.split("/").slice(0,-1).pop();
-                var internal_links = links[i].links;
-                var snds = links[i].sounds;
+                var internal_links = this.rect_and_properties.links;
+                var snds = this.rect_and_properties.sounds;
                 internal_links = internal_links === undefined ? null: internal_links;
                 snds = snds === undefined ? null: snds;
-                var link = links[i].link.slice(1,);
+                var link = this.rect_and_properties.link.slice(1,);
                 link = "generic_image_link.html?img=" + prefix + instrument_name + link + ".png" + "&prefix=" + prefix + "&links=" + JSON.stringify(internal_links) + "&sounds=" + JSON.stringify(snds);
-                console.log(window.location);
                 window.location.href = link;
                 return;
+            } else if (regions.includes(this.rect_and_properties.link) && window.carte === undefined) {
+                window.top.location.href = "instruments_du_monde.html?region="+this.rect_and_properties.link;
+                return;
             }
-            window.top.location.href = links[i].link + ".html";
-            return;
-        }
+            window.top.location.href = this.rect_and_properties.link + ".html";
+        };
     }
     for (var i = 0; i < sounds.length; i++) {
-        if (x >= sounds[i].x1 && x <= sounds[i].x2 && y >= sounds[i].y1 && y <= sounds[i].y2 ) {
+        let div = give_me_a_div(sounds[i]);
+        div.onclick = function() {
             window.top.audio && window.top.audio.pause();
-            window.top.audio = new Audio('assets/'+ prefix + sounds[i].sound + suffix + '.mp3');
+            window.top.audio = new Audio('assets/'+ prefix + div.rect_and_properties.sound + suffix + '.mp3');
             window.top.audio.play();
-            return;
-        }
+        };
     }
     for (var i = 0; i < popups.length; i++) {
-        if (x >= popups[i].x1 && x <= popups[i].x2 && y >= popups[i].y1 && y <= popups[i].y2 ) {
-            showOverlay(popups[i].link, popups[i].links, popups[i].sounds);
-        }
+        let div = give_me_a_div(popups[i]);
+        div.onclick = function() {
+            if (regions.includes(div.rect_and_properties.link)) {
+                showOverlay(div.rect_and_properties.link+".html");
+                return;
+            }
+            var link = div.rect_and_properties.link;
+            var link_splitted = link.split(".");
+            var instrument_name = prefix.split("/").slice(0,-1).pop();
+            if (link == "notes") {
+                link = "000f" + ".png";
+            } else if (link == "vues") {
+                link = "000v" + ".png";
+            } else if (link == "demo") {
+                link = "000b" + ".png";
+            } else if (link == "aussi") {
+                link = "000s" + ".png";
+            } else {
+                link = "00" + link + "z.png";
+            }
+
+            var p_links = div.rect_and_properties.links;
+            var p_sounds = div.rect_and_properties.sounds;
+            p_links = p_links === undefined ? null: p_links;
+            p_sounds = p_sounds === undefined ? null: p_sounds;
+
+            link = "generic_image_link.html?img=" + prefix + instrument_name + link + "&prefix=" + prefix + "&links=" + JSON.stringify(p_links) + "&sounds=" + JSON.stringify(p_sounds);
+            showOverlay(link);
+        };
     }
-});
+}
+
+if (!image.complete) {
+    image.onload = function (){position_divs();};
+} else {
+    console.log("was complete");
+    position_divs();
+}
+
+window.onresize = function(){
+    all_the_divs.forEach(function(it){
+        it.restyle();
+    });
+};

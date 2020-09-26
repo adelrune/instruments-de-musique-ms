@@ -10,20 +10,27 @@
   </head>
 
   <body>
-    <image id="img" src="assets/worldmap.png"></image>
+    <div id="container">
+      <image id="img" src="assets/worldmap.png"></image>
+    </div>
     <script>
+      window.carte = true;
       prefix = "";
       suffix = "";
       sounds = [];
-          links = [{"sound":"","link":"amerique_du_nord","x1":35,"y1":74,"x2":266,"y2":213},{"sound":"","link":"amerique_du_nord","x1":248,"y1":77,"x2":292,"y2":131},{"sound":"","link":"amerique_du_nord","x1":144,"y1":211,"x2":211,"y2":229},
-                   {"sound":"","link":"amerique_latine","x1":99,"y1":226,"x2":256,"y2":403},{"sound":"","link":"amerique_latine","x1":114,"y1":218,"x2":151,"y2":240},
-                   {"sound":"","link":"afrique","x1":268,"y1":208,"x2":354,"y2":366},{"sound":"","link":"afrique","x1":345,"y1":230,"x2":362,"y2":280},{"sound":"","link":"afrique","x1":356,"y1":245,"x2":371,"y2":354},{"sound":"","link":"afrique","x1":363,"y1":254,"x2":403,"y2":363},
-                   {"sound":"","link":"asie_centrale_et_orientale","x1":363,"y1":74,"x2":606,"y2":125},{"sound":"","link":"asie_centrale_et_orientale","x1":410,"y1":125,"x2":606,"y2":193},{"sound":"","link":"asie_centrale_et_orientale","x1":383,"y1":180,"x2":555,"y2":202},{"sound":"","link":"asie_centrale_et_orientale","x1":434,"y1":197,"x2":550,"y2":225},{"sound":"","link":"asie_centrale_et_orientale","x1":459,"y1":199,"x2":532,"y2":238},{"sound":"","link":"asie_centrale_et_orientale","x1":476,"y1":230,"x2":499,"y2":243},
-                   {"sound":"","link":"moyen_orient","x1":344,"y1":193,"x2":385,"y2":217},{"sound":"","link":"moyen_orient","x1":360,"y1":214,"x2":403,"y2":233},{"sound":"","link":"moyen_orient","x1":382,"y1":205,"x2":403,"y2":235},{"sound":"","link":"moyen_orient","x1":366,"y1":230,"x2":405,"y2":257},
-                   {"sound":"","link":"asie_du_sud","x1":401,"y1":205,"x2":432,"y2":274},{"sound":"","link":"asie_du_sud","x1":424,"y1":225,"x2":449,"y2":273},{"sound":"","link":"asie_du_sud","x1":437,"y1":226,"x2":450,"y2":243},{"sound":"","link":"asie_du_sud","x1":451,"y1":226,"x2":456,"y2":235},
-                   {"sound":"","link":"asie_du_sud_est","x1":452,"y1":229,"x2":526,"y2":300},
-                   {"sound":"","link":"oceanie","x1":523,"y1":254,"x2":608,"y2":385},{"sound":"","link":"oceanie","x1":475,"y1":301,"x2":532,"y2":378},
-                   {"sound":"","link":"europe","x1":267,"y1":134,"x2":406,"y2":175},{"sound":"","link":"europe","x1":297,"y1":88,"x2":372,"y2":161},{"sound":"","link":"europe","x1":359,"y1":125,"x2":408,"y2":177},{"sound":"","link":"europe","x1":352,"y1":179,"x2":386,"y2":203},{"sound":"","link":"europe","x1":319,"y1":189,"x2":343,"y2":206},{"sound":"","link":"europe","x1":267,"y1":134,"x2":314,"y2":205}
+      links = [];
+      popups = [
+
+          {"sound":"","link":"amerique_du_nord","x1":35,"y1":74,"x2":266,"y2":213},{"sound":"","link":"amerique_du_nord","x1":248,"y1":77,"x2":292,"y2":131},{"sound":"","link":"amerique_du_nord","x1":144,"y1":211,"x2":211,"y2":229},
+          {"sound":"","link":"amerique_latine","x1":99,"y1":226,"x2":256,"y2":403},{"sound":"","link":"amerique_latine","x1":114,"y1":218,"x2":151,"y2":240},
+          {"sound":"","link":"afrique","x1":268,"y1":208,"x2":354,"y2":366},{"sound":"","link":"afrique","x1":345,"y1":230,"x2":362,"y2":280},{"sound":"","link":"afrique","x1":356,"y1":245,"x2":371,"y2":354},{"sound":"","link":"afrique","x1":363,"y1":254,"x2":403,"y2":363},
+          {"sound":"","link":"asie_centrale_et_orientale","x1":363,"y1":74,"x2":606,"y2":125},{"sound":"","link":"asie_centrale_et_orientale","x1":410,"y1":125,"x2":606,"y2":193},{"sound":"","link":"asie_centrale_et_orientale","x1":383,"y1":180,"x2":555,"y2":202},{"sound":"","link":"asie_centrale_et_orientale","x1":434,"y1":197,"x2":550,"y2":225},{"sound":"","link":"asie_centrale_et_orientale","x1":459,"y1":199,"x2":532,"y2":238},{"sound":"","link":"asie_centrale_et_orientale","x1":476,"y1":230,"x2":499,"y2":243},
+          {"sound":"","link":"moyen_orient","x1":344,"y1":193,"x2":385,"y2":217},{"sound":"","link":"moyen_orient","x1":360,"y1":214,"x2":403,"y2":233},{"sound":"","link":"moyen_orient","x1":382,"y1":205,"x2":403,"y2":235},{"sound":"","link":"moyen_orient","x1":366,"y1":230,"x2":405,"y2":257},
+          {"sound":"","link":"asie_du_sud","x1":401,"y1":205,"x2":432,"y2":274},{"sound":"","link":"asie_du_sud","x1":424,"y1":225,"x2":449,"y2":273},{"sound":"","link":"asie_du_sud","x1":437,"y1":226,"x2":450,"y2":243},{"sound":"","link":"asie_du_sud","x1":451,"y1":226,"x2":456,"y2":235},
+          {"sound":"","link":"asie_du_sud_est","x1":452,"y1":229,"x2":526,"y2":300},
+          {"sound":"","link":"oceanie","x1":523,"y1":254,"x2":608,"y2":385},{"sound":"","link":"oceanie","x1":475,"y1":301,"x2":532,"y2":378},
+          {"sound":"","link":"europe","x1":267,"y1":134,"x2":406,"y2":175},{"sound":"","link":"europe","x1":297,"y1":88,"x2":372,"y2":161},{"sound":"","link":"europe","x1":359,"y1":125,"x2":408,"y2":177},{"sound":"","link":"europe","x1":352,"y1":179,"x2":386,"y2":203},{"sound":"","link":"europe","x1":319,"y1":189,"x2":343,"y2":206},{"sound":"","link":"europe","x1":267,"y1":134,"x2":314,"y2":205}
+
       ];
     </script>
     <script src="scripts/tell_me_the_coord.js"></script>
