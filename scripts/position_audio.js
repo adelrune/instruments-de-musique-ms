@@ -157,7 +157,6 @@ function position_divs() {
 if (!image.complete) {
     image.onload = function (){position_divs();};
 } else {
-    console.log("was complete");
     position_divs();
 }
 
