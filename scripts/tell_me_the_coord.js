@@ -20,7 +20,7 @@ document.addEventListener("click", function(e) {
         pos_rect.x2 = xmax;
         pos_rect.y1 = ymin;
         pos_rect.y2 = ymax;
-        // navigator.clipboard.writeText(JSON.stringify(pos_rect));
+        navigator.clipboard.writeText(JSON.stringify(pos_rect));
         pos_rect = {sound:"", link:""};
 
         (visualiser != null) && (visualiser.style.display = "none");
